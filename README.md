@@ -125,7 +125,7 @@ involved.
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [contributing]: ./.github/CONTRIBUTING.md
 [contributors badge]: https://img.shields.io/github/contributors/adchitects/configs?style=for-the-badge
-[contributors url]: #contributors
+[contributors url]: #project-contributors
 
 ### Project contributors
 
