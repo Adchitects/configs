@@ -87,12 +87,14 @@ importers:
       '@adchitects/typescript-config': workspace:*
       '@types/node': ^18.7.18
       '@workspace/shared': workspace:*
+      syncpack: ^8.2.4
       tsup: ^6.2.3
       typescript: ^4.8.3
     devDependencies:
       '@adchitects/typescript-config': link:../typescript
       '@types/node': 18.7.18
       '@workspace/shared': link:../../shared
+      syncpack: 8.2.4
       tsup: 6.2.3_typescript@4.8.3
       typescript: 4.8.3
 
