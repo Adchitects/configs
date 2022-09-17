@@ -1,5 +1,8 @@
 # Dependency directories
 node_modules/
 
+# Build outputs
+dist/
+
 # Turbo cache folder
 .turbo
