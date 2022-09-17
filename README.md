@@ -140,6 +140,7 @@ involved.
   <tbody>
     <tr>
       <td align="center"><a href="https://github.com/xeho91"><img src="https://avatars.githubusercontent.com/u/18627568?v=4?s=60" width="60px;" alt=""/><br /><sub><b>Matt Kadlubowski</b></sub></a><br /><a href="https://github.com/adchitects/@adchitects/configs/commits?author=xeho91" title="Code">💻</a> <a href="#maintenance-xeho91" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://www.marcinowczarzak.pl/"><img src="https://avatars.githubusercontent.com/u/16150147?v=4?s=60" width="60px;" alt=""/><br /><sub><b>Marcin Owczarzak</b></sub></a><br /><a href="https://github.com/adchitects/@adchitects/configs/commits?author=acwo" title="Code">💻</a> <a href="#ideas-acwo" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-acwo" title="Maintenance">🚧</a></td>
     </tr>
   </tbody>
 </table>
