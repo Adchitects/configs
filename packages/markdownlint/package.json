@@ -20,7 +20,7 @@
 	"engines": {
 		"node": ">=16"
 	},
-    "main": "dist/index.json",
+	"main": "dist/index.json",
 	"files": [
 		"/dist"
 	],
@@ -32,8 +32,12 @@
 		"lint:all": "pnpm lint:deps",
 		"lint:deps": "depcheck"
 	},
+	"peerDependencies": {
+		"markdownlint-cli": "0.32.2"
+	},
 	"devDependencies": {
 		"make-dir-cli": "^3.0.0",
+		"markdownlint": "^0.26.2",
 		"node-jq": "^2.3.3",
 		"strip-json-comments-cli": "^2.0.2"
 	}
