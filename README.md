@@ -88,6 +88,20 @@ registry].
 
 ---
 
+## License
+
+[![License badge]](./LICENSE.md "Project's license")
+
+⚖️ **The code, including packages** are licensed under the [MIT license](./LICENSE.md).
+
+[![FOSSA Status Card]][fossa status]
+
+[license badge]: https://img.shields.io/github/license/adchitects/configs?style=for-the-badge
+[fossa status card]: https://app.fossa.com/api/projects/custom%2B20521%2Fgit%40github.com%3Aadchitects%2Fconfigs.git.svg?type=large
+[fossa status]: https://app.fossa.com/projects/custom%2B20521%2Fgit%40github.com%3Aadchitects%2Fconfigs.git?ref=badge_large
+
+---
+
 ## Security
 
 ![workflow maintenance badge]\
