@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "@adchitects/typescript-config",
+	"compilerOptions": {
+		"composite": true,
+		"module": "ESNext",
+		"outDir": "./build",
+		"rootDir": "./source",
+		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",
+		"types": ["node"]
+	},
+	"exclude": ["build/", "node_modules/"],
+	"include": ["source/"]
+}

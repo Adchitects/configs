@@ -25,13 +25,20 @@
 		"/dist"
 	],
 	"scripts": {
+		"build": "tsup",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
-		"lint:all": "pnpm lint:deps",
-		"lint:deps": "depcheck"
+		"dev": "tsup --watch",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:types": "tsc --noEmit"
 	},
 	"devDependencies": {
-		"@workspace/shared": "workspace:*"
+		"@adchitects/typescript-config": "workspace:*",
+		"@types/node": "^18.7.18",
+		"@workspace/shared": "workspace:*",
+		"tsup": "^6.2.3",
+		"typescript": "^4.8.3"
 	}
 }

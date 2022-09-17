@@ -1,0 +1,4 @@
+/* https://www.typescriptlang.org/tsconfig */
+{
+	"$schema": "https://json.schemastore.org/tsconfig"
+}
