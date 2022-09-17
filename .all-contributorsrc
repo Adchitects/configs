@@ -9,6 +9,17 @@
   "imageSize": 60,
   "commit": true,
   "commitConvention": "gitmoji",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "xeho91",
+      "name": "Matt Kadlubowski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18627568?v=4",
+      "profile": "https://github.com/xeho91",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    }
+  ],
   "contributorsPerLine": 4
 }
