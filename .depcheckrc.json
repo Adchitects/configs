@@ -2,8 +2,11 @@
 	"ignore-bin-package": false,
 	"ignores": [
 		"@adchitects/*",
+        "@changesets/*",
+        "browserslist",
 		"concurrently",
-		"depcheck"
+		"depcheck",
+        "typescript"
 	],
 	"skip-missing": false
 }
