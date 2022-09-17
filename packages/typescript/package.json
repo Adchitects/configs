@@ -1,0 +1,34 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"type": "commonjs",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@adchitects/typescript-config",
+	"version": "0.0.0",
+	"description": "@adchitects extendable configuration for typescript.",
+	"keywords": [
+		"config",
+		"tools",
+		"typescript"
+	],
+	"homepage": "https://github.com/adchitects/configs/tree/main/packages/typescript",
+	"repository": "https://github.com/adchitects/configs/tree/main/packages/typescript",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16"
+	},
+	"main": "dist/index.js",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\""
+	},
+	"devDependencies": {
+		"@workspace/shared": "workspace:*"
+	}
+}
