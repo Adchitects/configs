@@ -6,6 +6,16 @@
 			"dependsOn": [],
 			"outputs": [],
 			"cache": false
+		},
+		"lint": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": true
+		},
+		"lint:deps": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": true
 		}
 	}
 }

@@ -1,0 +1,9 @@
+{
+	"ignore-bin-package": false,
+	"ignores": [
+		"@adchitects/*",
+		"concurrently",
+		"depcheck"
+	],
+	"skip-missing": false
+}

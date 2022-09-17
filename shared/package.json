@@ -10,6 +10,8 @@
 	"scripts": {
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:build": "del \"./build\"",
-		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\""
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"lint:all": "pnpm lint:deps",
+		"lint:deps": "depcheck"
 	}
 }
