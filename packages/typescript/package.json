@@ -29,7 +29,8 @@
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
-		"lint:deps": "depcheck"
+		"lint:deps": "depcheck",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
 	},
 	"devDependencies": {
 		"make-dir-cli": "^3.0.0",

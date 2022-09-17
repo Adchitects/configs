@@ -25,6 +25,7 @@
 		"dev": "turbo run dev -v",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings ; pnpm turbo run lint -v",
 		"lint:deps": "concurrently \"depcheck\" --group --timings",
+		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{.changeset,shared,packages}/**/*\"",
 		"preinstall": "npx only-allow pnpm"
 	},
 	"devDependencies": {
