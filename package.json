@@ -19,10 +19,12 @@
 		"contributors:generate": "all-contributors generate",
 		"deps:check": "pnpm lint:deps ; turbo run lint:deps -v",
 		"deps:upgrade": "pnpm deps:upgrade:root ; pnpm deps:upgrade:packages ; pnpm:deps:upgrade:shared",
-		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
 		"deps:upgrade:packages": "pnpm upgrade --interactive --latest --filter \"@adchitects/*\"",
+		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
 		"deps:upgrade:shared": "pnpm upgrade --interactive --latest --filter \"@workspace/shared\"",
 		"dev": "turbo run dev -v",
+		"format": "concurrently \"pnpm:format:*\" --group --timings ; turbo run format -v",
+		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings ; pnpm turbo run lint -v",
 		"lint:deps": "concurrently \"depcheck\" --group --timings",
 		"preinstall": "npx only-allow pnpm"

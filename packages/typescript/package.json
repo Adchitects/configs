@@ -19,7 +19,7 @@
 	"engines": {
 		"node": ">=16"
 	},
-    "main": "tsconfig.json",
+	"main": "tsconfig.json",
 	"files": [
 		"/dist"
 	],
@@ -28,6 +28,8 @@
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck"
 	},

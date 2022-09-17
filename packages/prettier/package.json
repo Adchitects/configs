@@ -29,6 +29,8 @@
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
 		"lint:types": "tsc --noEmit"
