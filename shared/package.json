@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
+	"type": "module",
+	"name": "@workspace/shared",
+	"version": "0.0.0",
+	"engines": {
+		"node": ">=16"
+	},
+	"scripts": {
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./build\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\""
+	}
+}
