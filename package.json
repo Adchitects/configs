@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
+	"type": "module",
+	"name": "@workspace/root",
+	"homepage": "https://github.com/adchitects/configs",
+	"repository": "adchitects/configs.git",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16",
+		"pnpm": ">=7"
+	},
+	"packageManager": "pnpm@7.11.0"
+}
