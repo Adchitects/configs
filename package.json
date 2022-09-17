@@ -12,8 +12,10 @@
 	},
 	"packageManager": "pnpm@7.11.0",
 	"scripts": {
-        "clean": "pnpm clean:cache ; turbo run clean -v",
+		"clean": "pnpm clean:cache ; turbo run clean -v",
 		"clean:cache": "del \"./node_modules/.cache\"",
+		"contributors:add": "all-contributors add",
+		"contributors:generate": "all-contributors generate",
 		"deps:upgrade": "pnpm deps:upgrade:root ; pnpm deps:upgrade:packages ; pnpm:deps:upgrade:shared",
 		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
 		"deps:upgrade:packages": "pnpm upgrade --interactive --latest --filter ./packages",
@@ -21,6 +23,7 @@
 		"preinstall": "npx only-allow pnpm"
 	},
 	"devDependencies": {
+		"all-contributors-cli": "^6.20.4",
 		"concurrently": "^7.4.0",
 		"del-cli": "^5.0.0",
 		"turbo": "^1.4.7"

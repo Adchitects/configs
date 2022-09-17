@@ -1,0 +1,14 @@
+{
+  "projectName": "@adchitects/configs",
+  "projectOwner": "adchitects",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 60,
+  "commit": true,
+  "commitConvention": "gitmoji",
+  "contributors": [],
+  "contributorsPerLine": 4
+}
