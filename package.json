@@ -27,7 +27,8 @@
 		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings ; pnpm turbo run lint -v",
 		"lint:deps": "concurrently \"depcheck\" --group --timings",
-		"preinstall": "npx only-allow pnpm"
+		"preinstall": "npx only-allow pnpm",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@adchitects/syncpack-config": "workspace:^0.0.0",
@@ -39,6 +40,8 @@
 		"del-cli": "^5.0.0",
 		"depcheck": "^1.4.3",
 		"syncpack": "^8.2.4",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
 		"turbo": "^1.4.7",
 		"typescript": "^4.8.3"
 	}
