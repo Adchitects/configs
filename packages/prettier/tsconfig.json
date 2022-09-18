@@ -7,7 +7,7 @@
 		"outDir": "./dist",
 		"rootDir": "./source",
 		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",
-		"types": ["node"]
+		"types": ["node", "prettier"]
 	},
 	"exclude": ["dist/", "node_modules/"],
 	"include": ["source/"]
