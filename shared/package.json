@@ -11,7 +11,7 @@
 		"./configuration": "./dist/configuration.js",
 		"./environment": "./dist/environment.js",
 		"./module": "./dist/module.js"
-    },
+	},
 	"typesVersions": {
 		"*": {
 			"*": [
