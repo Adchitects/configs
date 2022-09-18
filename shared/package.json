@@ -8,9 +8,9 @@
 		"node": ">=16"
 	},
 	"exports": {
-		"./configuration": "./build/configuration.js",
-		"./environment": "./build/environment.js",
-		"./module": "./build/module.js"
+		"./configuration": "./dist/configuration.js",
+		"./environment": "./dist/environment.js",
+		"./module": "./dist/module.js"
     },
 	"typesVersions": {
 		"*": {
@@ -22,7 +22,7 @@
 	"scripts": {
 		"build": "tsup",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
-		"clean:build": "del \"./build\"",
+		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
