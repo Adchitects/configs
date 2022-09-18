@@ -8,6 +8,7 @@
 		"node": ">=16"
 	},
 	"exports": {
+		"./configuration": "./build/configuration.js",
 		"./environment": "./build/environment.js",
 		"./module": "./build/module.js"
     },
