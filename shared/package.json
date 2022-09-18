@@ -29,6 +29,7 @@
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "^18.7.18",
 		"tsup": "^6.2.3",
+		"type-fest": "^2.19.0",
 		"typescript": "^4.8.3"
 	}
 }

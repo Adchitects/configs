@@ -111,11 +111,13 @@ importers:
       '@adchitects/typescript-config': workspace:*
       '@types/node': ^18.7.18
       tsup: ^6.2.3
+      type-fest: ^2.19.0
       typescript: ^4.8.3
     devDependencies:
       '@adchitects/typescript-config': link:../packages/typescript
       '@types/node': 18.7.18
       tsup: 6.2.3_typescript@4.8.3
+      type-fest: 2.19.0
       typescript: 4.8.3
 
 packages:
@@ -4139,6 +4141,11 @@ packages:
   /type-fest/1.4.0:
     resolution: {integrity: sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /type-fest/2.19.0:
+    resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
+    engines: {node: '>=12.20'}
     dev: true
 
   /typescript/4.8.3:
