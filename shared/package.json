@@ -33,6 +33,7 @@
 		"typescript": "^4.8.3"
 	},
 	"dependencies": {
-		"deepmerge-ts": "^4.2.1"
+		"deepmerge-ts": "^4.2.1",
+		"read-pkg-up": "^9.1.0"
 	}
 }
