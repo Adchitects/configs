@@ -110,9 +110,12 @@ importers:
     specifiers:
       '@adchitects/typescript-config': workspace:*
       '@types/node': ^18.7.18
+      deepmerge-ts: ^4.2.1
       tsup: ^6.2.3
       type-fest: ^2.19.0
       typescript: ^4.8.3
+    dependencies:
+      deepmerge-ts: 4.2.1
     devDependencies:
       '@adchitects/typescript-config': link:../packages/typescript
       '@types/node': 18.7.18
@@ -1253,6 +1256,11 @@ packages:
       pify: 2.3.0
       strip-dirs: 2.1.0
     dev: true
+
+  /deepmerge-ts/4.2.1:
+    resolution: {integrity: sha512-xzJLiUo4z1dD2nggSfaMvHo5qWLoy/JVa9rKuktC6FrQQEBI8Qnj7KwuCYZhqBoGOOpGqs6+3MR2ZhSMcTr4BA==}
+    engines: {node: '>=12.4.0'}
+    dev: false
 
   /defaults/1.0.3:
     resolution: {integrity: sha512-s82itHOnYrN0Ib8r+z7laQz3sdE+4FP3d9Q7VLO7U+KRT+CR0GsWuyHxzdAY82I7cXv0G/twrqomTJLOssO5HA==}

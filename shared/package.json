@@ -31,5 +31,8 @@
 		"tsup": "^6.2.3",
 		"type-fest": "^2.19.0",
 		"typescript": "^4.8.3"
+	},
+	"dependencies": {
+		"deepmerge-ts": "^4.2.1"
 	}
 }
