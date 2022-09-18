@@ -30,8 +30,11 @@
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:prettier": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\" --write",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
+		"lint:format": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\"",
 		"lint:types": "tsc --noEmit"
 	},
 	"devDependencies": {
