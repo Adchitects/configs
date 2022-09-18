@@ -8,6 +8,16 @@
 ➡️ This project is a [monorepo] made with [pnpm workspace] and powered by
 [changesets], [turborepo].
 
+> This project is heavily inspired by another project - [@terminal-nerds/config].\
+> The author [@xeho91] from this other project is also one of the developers
+> from [@adchitects] at the moment of creation.\
+> There are full blessings from him to use his idea & work.\
+> The difference is that this one project is tweaked to the company's needs.
+
+[@terminal-nerds/config]: https://github.com/terminal-nerds/config
+[@xeho91]: https://github.com/xeho91
+[@adchitects]: https://github.com/adchitects
+
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [pnpm workspace]: https://pnpm.io/workspaces
 [pnpm workspace badge]: https://img.shields.io/badge/-pnpm%20workspace-informational?style=for-the-badge&logo=pnpm
