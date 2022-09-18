@@ -144,13 +144,15 @@ jobs:
             [
                 build,
                 lint_depcheck,
-                lint_eslint,
-                lint_markdownlint,
-                lint_prettier,
+                # TODO: Enable when they're ready
+                # lint_eslint,
+                # lint_markdownlint,
+                # lint_prettier,
                 lint_syncpack,
-                security_codeql,
-                security_git-guardian,
-                security_snyk,
+                # TODO: Enable when we have a decision on security policy
+                # security_codeql,
+                # security_git-guardian,
+                # security_snyk,
             ]
         secrets:
             NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
