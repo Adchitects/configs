@@ -2,4 +2,4 @@
 "@adchitects/typescript-config": minor
 ---
 
-Initial configuration package
+🎉 Initial configuration package
