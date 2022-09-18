@@ -1,0 +1,158 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+---
+# NOTE: CI -> Continuous Integration
+# NOTE: CD -> Continuous Deployment
+name: CI & CD
+
+on:
+    pull_request:
+        branches: [main]
+    push:
+        branches: [main]
+    workflow_dispatch:
+        inputs:
+            reason:
+                description: Reason of re-running this workflow
+                required: false
+                type: string
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+    cancel-in-progress: true
+
+defaults:
+    run:
+        shell: bash
+
+env:
+    CI: true
+
+jobs:
+    build:
+        name: Packages
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/build.yml
+        uses: adchitects/.github/.github/workflows/build.yml@main
+        with:
+            artifact-name: "built-packages"
+            artifact-path: "./packages/*/dist/"
+            artifact-upload: true
+            include: "./packages/*/dist/**/*.{js,json}"
+            script-build: build
+
+    lint_depcheck:
+        # Analyze dependencies usage in package.json files
+        name: Lint / depcheck
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
+        uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
+        needs: [build]
+        with:
+            step-name: Execute package.json script
+            run: pnpm deps:check
+
+    # TODO: Configure it when the ESLint config is ready
+    # lint_eslint:
+    #     # Analyze the JavaScript codebase
+    #     name: Lint / ESLint
+    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
+    #     uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
+    #     needs: [build]
+    #     with:
+    #         download-build: true
+    #         step-name: Execute ESLint CLI task
+    #         # https://eslint.org/docs/user-guide/command-line-interface
+    #         run: >
+    #             DEBUG="eslint:cli-engine"
+    #             pnpm eslint .
+    #             --cache
+    #             --cache-location "./node_modules/.cache/eslint"
+    #             --ext .cjs,.js,.json,.ts,.yaml,.yml
+
+    # TODO: Configure it when the markdownLint config is ready
+    # lint_markdownlint:
+    #     # Analyze the markdownlint files
+    #     name: Lint / markdownlint
+    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
+    #     uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
+    #     needs: [build]
+    #     with:
+    #         download-build: true
+    #         step-name: Execute markdownlint CLI task
+    #         # https://github.com/igorshubovych/markdownlint-cli#usage
+    #         run: >
+    #             pnpm markdownlint .
+    #             --dot
+    #             --ignore "./.changeset/*.md"
+    #             --ignore-path ".gitignore"
+
+    # TODO: Configure it when the PrettierLint config is ready
+    # lint_prettier:
+    #     # Analyze the code format style
+    #     name: Lint / Prettier
+    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
+    #     uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
+    #     needs: [build]
+    #     with:
+    #         download-build: true
+    #         step-name: Execute "pretty-quick" CLI task
+    #         # https://github.com/azz/pretty-quick#usage
+    #         run: >
+    #             pnpm pretty-quick
+    #             --branch HEAD~${{ github.event.pull_request.commits }}
+    #             --verbose
+
+    lint_syncpack:
+        # Analyze the package.json files to find dependencies mismatches
+        name: Lint / syncpack
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
+        uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
+        needs: [build]
+        with:
+            download-build: true
+            step-name: Execute syncpack CLI task
+            # https://github.com/JamieMason/syncpack
+            run: pnpm syncpack list-mismatches
+
+    # TODO: Configure it when we decide on Security Policy
+    # security_codeql:
+    #     name: Security
+    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/codeql.yml
+    #     uses: adchitects/.github/.github/workflows/codeql.yml@main
+
+    # TODO: Configure it when we decide on Security Policy
+    # security_codeql:
+    # security_git-guardian:
+    #     name: Security
+    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/git-guardian.yml
+    #     uses: adchitects/.github/.github/workflows/git-guardian.yml@main
+    #     secrets:
+    #         GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
+
+    # TODO: Configure it when we decide on Security Policy
+    # security_snyk:
+    #     name: Security
+    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/snyk.yml
+    #     uses: adchitects/.github/.github/workflows/snyk.yml@main
+    #     secrets:
+    #         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+    release:
+        # Automatic release workflow with Changesets
+        name: Release
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/changesets.yml
+        uses: adchitects/.github/.github/workflows/changesets.yml@main
+        needs:
+            [
+                build,
+                lint_depcheck,
+                lint_eslint,
+                lint_markdownlint,
+                lint_prettier,
+                lint_syncpack,
+                security_codeql,
+                security_git-guardian,
+                security_snyk,
+            ]
+        secrets:
+            NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        with:
+            changelogs-path: "./packages/*/CHANGELOG.md"
