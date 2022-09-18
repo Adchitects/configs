@@ -4,11 +4,11 @@
 	"compilerOptions": {
 		"composite": true,
 		"module": "ESNext",
-		"outDir": "./build",
+		"outDir": "./dist",
 		"rootDir": "./source",
 		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",
 		"types": ["node"]
 	},
-	"exclude": ["build/", "node_modules/"],
+	"exclude": ["dist/", "node_modules/"],
 	"include": ["source/"]
 }
