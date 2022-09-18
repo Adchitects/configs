@@ -25,7 +25,8 @@
 		"dev": "turbo run dev -v",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings ; pnpm turbo run lint -v",
 		"lint:deps": "concurrently \"depcheck\" --group --timings",
-		"preinstall": "npx only-allow pnpm"
+		"preinstall": "npx only-allow pnpm",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@changesets/changelog-github": "^0.4.6",
