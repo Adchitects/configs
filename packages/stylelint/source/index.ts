@@ -1,3 +1,3 @@
 export function hello() {
-    console.log("Hello from @adchitects/stylelint-config!");
+	console.log("Hello from @adchitects/stylelint-config!");
 }

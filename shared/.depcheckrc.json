@@ -1,6 +1,3 @@
 {
-	"ignores": [
-		"@adchitects/typescript-config",
-		"@types/node"
-    ]
+	"ignores": ["@adchitects/typescript-config", "@types/node"]
 }

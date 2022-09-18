@@ -20,7 +20,7 @@
 	"engines": {
 		"node": ">=16"
 	},
-    "main": "dist/index.json",
+	"main": "dist/index.json",
 	"files": [
 		"/dist"
 	],
