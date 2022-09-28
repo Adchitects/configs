@@ -9,6 +9,7 @@ import configStandardSCSS from "./configs/standard-scss.js";
 
 import pluginHighPerformanceAnimation from "./plugins/high-performance-animation.js";
 import pluginNoUnsupportedBrowserFeatures from "./plugins/no-unsupported-browser-features.js";
+import pluginOrder from "./plugins/order";
 import pluginSCSS from "./plugins/scss.js";
 
 const mergedConfig = createMergedConfig([
@@ -18,6 +19,7 @@ const mergedConfig = createMergedConfig([
 	// Plugins
 	pluginHighPerformanceAnimation,
     pluginNoUnsupportedBrowserFeatures,
+	pluginOrder,
 	hasModule("sass") && pluginSCSS,
 
 	// Configurations
