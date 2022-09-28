@@ -20,6 +20,13 @@ env:
     CI: true
 
 jobs:
+    pull-request-codesee-map:
+        name: Pull Request
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/codesee-map.yml
+        uses: adchitects/.github/.github/workflows/codesee-map.yml@main
+        secrets:
+            CODESEE_ARCH_DIAG_API_TOKEN: ${{ secrets.CODESEE_ARCH_DIAG_API_TOKEN }}
+
     pull-request-greetings:
         name: Pull Request
         # https://github.com/adchitects/.github/blob/main/.github/workflows/greetings.yml
@@ -34,10 +41,3 @@ jobs:
         name: Issues
         # https://github.com/adchitects/.github/blob/main/.github/workflows/issue-labels.yml
         uses: adchitects/.github/.github/workflows/issue-labels.yml@main
-  # TODO: Add it once we have CodeSee Map configured (requires decision & permission)
-  # pull-request-codesee-map:
-  #     name: Pull Request
-  #     # https://github.com/adchitects/.github/blob/main/.github/workflows/codesee-map.yml
-  #     uses: adchitects/.github/.github/workflows/codesee-map.yml@main
-  #     secrets:
-  #         CODESEE_ARCH_DIAG_API_TOKEN: ${{ secrets.CODESEE_ARCH_DIAG_API_TOKEN }}
