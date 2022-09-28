@@ -4,11 +4,14 @@ import { hasModule } from "@workspace/shared/module";
 import stylelint from "./stylelint.js";
 
 import configPrettier from "./configs/prettier.js";
+import configStandard from "./configs/standard.js";
 
 const mergedConfig = createMergedConfig([
 	// Base
 	stylelint,
 
+	// Configurations
+	!hasModule("sass") && configStandard,
 	/**
 	 * NOTE: Must come as last to override rules related to the code format.
 	 * Let Prettier take care of it.
