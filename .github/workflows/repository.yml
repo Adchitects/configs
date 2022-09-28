@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+---
+name: Repository
+
+on:
+    issues:
+    pull_request_target:
+        branches: [main]
+    workflow_dispatch:
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+    cancel-in-progress: true
+
+defaults:
+    run:
+        shell: bash
+
+env:
+    CI: true
+
+jobs:
+    pull-request-greetings:
+        name: Pull Request
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/greetings.yml
+        uses: adchitects/.github/.github/workflows/greetings.yml@main
+
+    pull-request-labels:
+        name: Pull Request
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/pull-request-labels.yml
+        uses: adchitects/.github/.github/workflows/pull-request-labels.yml@main
+
+    issue-labels:
+        name: Issues
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/issue-labels.yml
+        uses: adchitects/.github/.github/workflows/issue-labels.yml@main
+  # TODO: Add it once we have CodeSee Map configured (requires decision & permission)
+  # pull-request-codesee-map:
+  #     name: Pull Request
+  #     # https://github.com/adchitects/.github/blob/main/.github/workflows/codesee-map.yml
+  #     uses: adchitects/.github/.github/workflows/codesee-map.yml@main
+  #     secrets:
+  #         CODESEE_ARCH_DIAG_API_TOKEN: ${{ secrets.CODESEE_ARCH_DIAG_API_TOKEN }}

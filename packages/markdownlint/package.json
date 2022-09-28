@@ -1,0 +1,40 @@
+{
+	"license": "MIT",
+	"$schema": "https://json.schemastore.org/package",
+	"type": "commonjs",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@adchitects/markdownlint-config",
+	"version": "0.0.0",
+	"description": "@adchitects extendable configuration for markdownlint.",
+	"keywords": [
+		"config",
+		"linter",
+		"markdownlint"
+	],
+	"homepage": "https://github.com/adchitects/configs/tree/main/packages/markdownlint",
+	"repository": "https://github.com/adchitects/configs/tree/main/packages/markdownlint",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16"
+	},
+    "main": "dist/index.json",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "make-dir \"./dist\" && strip-json-comments \"./source/index.json\" | jq --compact-output > \"./dist/index.json\"",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"lint:all": "pnpm lint:deps",
+		"lint:deps": "depcheck"
+	},
+	"devDependencies": {
+		"make-dir-cli": "^3.0.0",
+		"node-jq": "^2.3.3",
+		"strip-json-comments-cli": "^2.0.2"
+	}
+}
