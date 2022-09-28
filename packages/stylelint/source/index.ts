@@ -7,9 +7,13 @@ import configPrettier from "./configs/prettier.js";
 import configStandard from "./configs/standard.js";
 import configStandardSCSS from "./configs/standard-scss.js";
 
+import pluginSCSS from "./plugins/scss.js";
+
 const mergedConfig = createMergedConfig([
 	// Base
 	stylelint,
+
+	hasModule("sass") && pluginSCSS,
 
 	// Configurations
 	!hasModule("sass") && configStandard,
