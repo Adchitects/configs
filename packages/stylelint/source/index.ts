@@ -5,6 +5,7 @@ import stylelint from "./stylelint.js";
 
 import configPrettier from "./configs/prettier.js";
 import configStandard from "./configs/standard.js";
+import configStandardSCSS from "./configs/standard-scss.js";
 
 const mergedConfig = createMergedConfig([
 	// Base
@@ -12,6 +13,7 @@ const mergedConfig = createMergedConfig([
 
 	// Configurations
 	!hasModule("sass") && configStandard,
+	hasModule("sass") && configStandardSCSS,
 	/**
 	 * NOTE: Must come as last to override rules related to the code format.
 	 * Let Prettier take care of it.
