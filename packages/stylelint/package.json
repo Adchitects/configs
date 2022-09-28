@@ -14,6 +14,7 @@
 		"linter",
 		"stylelint"
 	],
+	"license": "MIT",
 	"homepage": "https://github.com/adchitects/configs/tree/main/packages/stylelint",
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/stylelint",
 	"bugs": "https://github.com/adchitects/configs/issues",

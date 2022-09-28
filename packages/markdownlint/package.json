@@ -14,6 +14,7 @@
 		"linter",
 		"markdownlint"
 	],
+	"license": "MIT",
 	"homepage": "https://github.com/adchitects/configs/tree/main/packages/markdownlint",
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/markdownlint",
 	"bugs": "https://github.com/adchitects/configs/issues",

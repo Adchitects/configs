@@ -13,6 +13,7 @@
 		"linter",
 		"eslint"
 	],
+	"license": "MIT",
 	"homepage": "https://github.com/adchitects/configs/tree/main/packages/eslint",
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/eslint",
 	"bugs": "https://github.com/adchitects/configs/issues",

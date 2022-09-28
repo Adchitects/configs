@@ -8,6 +8,16 @@
 ➡️ This project is a [monorepo] made with [pnpm workspace] and powered by
 [changesets], [turborepo].
 
+> This project is heavily inspired by another project - [@terminal-nerds/config].\
+> The author [@xeho91] from this other project is also one of the developers
+> from [@adchitects] at the moment of creation.\
+> There are full blessings from him to use his idea & work.\
+> The difference is that this one project is tweaked to the company's needs.
+
+[@terminal-nerds/config]: https://github.com/terminal-nerds/config
+[@xeho91]: https://github.com/xeho91
+[@adchitects]: https://github.com/adchitects
+
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [pnpm workspace]: https://pnpm.io/workspaces
 [pnpm workspace badge]: https://img.shields.io/badge/-pnpm%20workspace-informational?style=for-the-badge&logo=pnpm
@@ -85,6 +95,20 @@ registry].
 [typescript-config badge]: https://img.shields.io/badge/typescript-config-informational?style=flat-square&logo=typescript
 [typescript-config version badge]: https://img.shields.io/npm/v/@adchitects/typescript-config/latest?style=flat-square&logo=npm
 [typescript-config npm page]: https://www.npmjs.com/package/@adchitects/typescript-config
+
+---
+
+## License
+
+[![License badge]](./LICENSE.md "Project's license")
+
+⚖️ **The code, including packages** are licensed under the [MIT license](./LICENSE.md).
+
+[![FOSSA Status Card]][fossa status]
+
+[license badge]: https://img.shields.io/github/license/adchitects/configs?style=for-the-badge
+[fossa status card]: https://app.fossa.com/api/projects/custom%2B20521%2Fgit%40github.com%3Aadchitects%2Fconfigs.git.svg?type=large
+[fossa status]: https://app.fossa.com/projects/custom%2B20521%2Fgit%40github.com%3Aadchitects%2Fconfigs.git?ref=badge_large
 
 ---
 
