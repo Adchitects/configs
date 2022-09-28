@@ -7,12 +7,15 @@ import configPrettier from "./configs/prettier.js";
 import configStandard from "./configs/standard.js";
 import configStandardSCSS from "./configs/standard-scss.js";
 
+import pluginHighPerformanceAnimation from "./plugins/high-performance-animation.js";
 import pluginSCSS from "./plugins/scss.js";
 
 const mergedConfig = createMergedConfig([
 	// Base
 	stylelint,
 
+	// Plugins
+	pluginHighPerformanceAnimation,
 	hasModule("sass") && pluginSCSS,
 
 	// Configurations
