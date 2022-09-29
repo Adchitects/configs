@@ -2,11 +2,13 @@
 import "@rushstack/eslint-patch/modern-module-resolution";
 
 import { createMergedConfig } from "@workspace/shared/configuration";
+import { isContinuousIntegration } from "@workspace/shared/environment";
 import { hasModule } from "@workspace/shared/module";
 
 import eslint from "./eslint.js";
 
 import pluginCompat from "./plugins/compat.js";
+import pluginDiff from "./plugins/diff.js";
 
 import configNext from "./configs/next.js";
 import configPrettier from "./configs/prettier.js";
@@ -17,6 +19,7 @@ const mergedConfig = createMergedConfig([
 
 	// Plugins
 	pluginCompat,
+	isContinuousIntegration() && pluginDiff,
 
 	// Configs
 	/**
