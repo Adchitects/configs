@@ -1,5 +1,5 @@
 import { createMergedConfig } from "@workspace/shared/configuration";
-import { hasModule } from "@workspace/shared/module";
+import { hasKeywords } from "@workspace/shared/module";
 
 import prettier from "./prettier.js";
 
@@ -10,9 +10,7 @@ const mergedConfig = createMergedConfig([
 	prettier,
 
 	// Plugins
-    // TODO: @acwo I need your help to decide how to help detect when the project needs this plugin.
-    // Is there any specific Node.js package which is ALWAYS used with PHP projects?
-    hasModule("php") && phpPlugin,
+    hasKeywords(["php", "adchitects-php-project"]) && phpPlugin,
 ]);
 
 // eslint-disable-next-line unicorn/prefer-module
