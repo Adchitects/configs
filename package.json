@@ -27,6 +27,7 @@
 		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings ; pnpm turbo run lint -v",
 		"lint:deps": "concurrently \"depcheck\" --group --timings",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .cjs,.json,.yml,.yaml --ignore \"./packages\" --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{.changeset,shared,packages}/**/*\"",
 		"preinstall": "npx only-allow pnpm",
 		"prepare": "husky install"

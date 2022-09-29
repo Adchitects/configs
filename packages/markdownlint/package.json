@@ -33,6 +33,7 @@
 		"format:syncpack": "syncpack format",
 		"lint:all": "pnpm lint:deps",
 		"lint:deps": "depcheck",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
 	},
 	"peerDependencies": {
