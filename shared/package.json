@@ -27,6 +27,7 @@
 		"dev": "tsup --watch",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
+		"lint:md": "markdownlint . --dot --ignore-path \"../.gitignore\" --config \"../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
 	},
 	"devDependencies": {
