@@ -53,6 +53,7 @@
 		"@rushstack/eslint-patch": "^1.2.0",
 		"eslint-config-next": "^12.3.1",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-define-config": "^1.7.0"
+		"eslint-define-config": "^1.7.0",
+		"eslint-plugin-compat": "^4.0.2"
 	}
 }
