@@ -54,6 +54,7 @@ importers:
       eslint-define-config: ^1.7.0
       eslint-plugin-compat: ^4.0.2
       eslint-plugin-diff: ^2.0.1
+      eslint-plugin-testing-library: ^5.7.0
       eslint-plugin-unicorn: ^43.0.2
       eslint-plugin-yml: ^1.2.0
       tsup: ^6.2.3
@@ -67,6 +68,7 @@ importers:
       eslint-define-config: 1.7.0
       eslint-plugin-compat: 4.0.2
       eslint-plugin-diff: 2.0.1
+      eslint-plugin-testing-library: 5.7.0_typescript@4.8.3
       eslint-plugin-unicorn: 43.0.2
       eslint-plugin-yml: 1.2.0
     devDependencies:
@@ -2324,6 +2326,18 @@ packages:
       resolve: 2.0.0-next.4
       semver: 6.3.0
       string.prototype.matchall: 4.0.7
+    dev: false
+
+  /eslint-plugin-testing-library/5.7.0_typescript@4.8.3:
+    resolution: {integrity: sha512-pI8LKtFiAflBpN4h14vTtfhKqLwtIW40TNhWyw0ckqHm0W/J0VmYtThoxpTAdHrvEWnkALSG1Z8ABBkIncMIHA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0, npm: '>=6'}
+    peerDependencies:
+      eslint: ^7.5.0 || ^8.0.0
+    dependencies:
+      '@typescript-eslint/utils': 5.38.1_typescript@4.8.3
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
     dev: false
 
   /eslint-plugin-unicorn/43.0.2:
