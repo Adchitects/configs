@@ -9,6 +9,7 @@ import eslint from "./eslint.js";
 
 import pluginCompat from "./plugins/compat.js";
 import pluginDiff from "./plugins/diff.js";
+import pluginImport from "./plugins/import.js";
 import pluginJest from "./plugins/jest.js";
 import pluginJestDOM from "./plugins/jest-dom.js";
 import pluginJestFormatting from "./plugins/jest-formatting.js";
@@ -37,6 +38,7 @@ const mergedConfig = createMergedConfig([
 	// Plugins
 	pluginCompat,
 	isContinuousIntegration() && pluginDiff,
+	pluginImport,
 	(hasModule("jest") || hasModule("vitest")) && pluginJest,
 	hasModule("@testing-library/jest-dom") && pluginJestDOM,
 	(hasModule("jest") || hasModule("vitest")) && pluginJestFormatting,
