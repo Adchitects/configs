@@ -9,6 +9,7 @@ import eslint from "./eslint.js";
 
 import pluginCompat from "./plugins/compat.js";
 import pluginDiff from "./plugins/diff.js";
+import pluginStorybook from "./plugins/storybook.js";
 import pluginTestingLibrary from "./plugins/testing-library.js";
 import pluginTypeScript from "./plugins/typescript.js";
 import pluginUnicorn from "./plugins/unicorn.js";
@@ -24,6 +25,7 @@ const mergedConfig = createMergedConfig([
 	// Plugins
 	pluginCompat,
 	isContinuousIntegration() && pluginDiff,
+	hasModule("sb") && pluginStorybook,
 	hasModule("@testing-library/jest-dom") && pluginTestingLibrary,
 	hasModule("typescript") && pluginTypeScript,
 	pluginUnicorn,
