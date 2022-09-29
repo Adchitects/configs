@@ -51,6 +51,7 @@ importers:
       eslint-config-prettier: ^8.5.0
       eslint-define-config: ^1.7.0
       eslint-plugin-compat: ^4.0.2
+      eslint-plugin-diff: ^2.0.1
       tsup: ^6.2.3
       typescript: ^4.8.3
     dependencies:
@@ -59,6 +60,7 @@ importers:
       eslint-config-prettier: 8.5.0
       eslint-define-config: 1.7.0
       eslint-plugin-compat: 4.0.2
+      eslint-plugin-diff: 2.0.1
     devDependencies:
       '@adchitects/typescript-config': link:../typescript
       '@types/eslint': 8.4.6
@@ -2156,6 +2158,13 @@ packages:
       find-up: 5.0.0
       lodash.memoize: 4.1.2
       semver: 7.3.5
+    dev: false
+
+  /eslint-plugin-diff/2.0.1:
+    resolution: {integrity: sha512-qqbvwaaO1cfkUprliqiRojRsD0qGsvzmJNqNrb9s0h15sDVzZMXYdu0TUFpUwauLeU28etSsfWIp0Uu+OAcXXw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      eslint: '>=6.7.0'
     dev: false
 
   /eslint-plugin-import/2.26.0_kr4svvuqpwexiiju2jusxvx3m4:
