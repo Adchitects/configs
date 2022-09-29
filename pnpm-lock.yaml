@@ -54,6 +54,7 @@ importers:
       eslint-define-config: ^1.7.0
       eslint-plugin-compat: ^4.0.2
       eslint-plugin-diff: ^2.0.1
+      eslint-plugin-sonarjs: ^0.15.0
       eslint-plugin-sql: ^2.2.1
       eslint-plugin-storybook: ^0.6.4
       eslint-plugin-testing-library: ^5.7.0
@@ -70,6 +71,7 @@ importers:
       eslint-define-config: 1.7.0
       eslint-plugin-compat: 4.0.2
       eslint-plugin-diff: 2.0.1
+      eslint-plugin-sonarjs: 0.15.0
       eslint-plugin-sql: 2.2.1
       eslint-plugin-storybook: 0.6.4_typescript@4.8.3
       eslint-plugin-testing-library: 5.7.0_typescript@4.8.3
@@ -2347,6 +2349,13 @@ packages:
       resolve: 2.0.0-next.4
       semver: 6.3.0
       string.prototype.matchall: 4.0.7
+    dev: false
+
+  /eslint-plugin-sonarjs/0.15.0:
+    resolution: {integrity: sha512-LuxHdAe6VqSbi1phsUvNjbmXLuvlobmryQJJNyQYbdubCfz6K8tmgoqNiJPnz0pP2AbYDbtuPm0ajOMgMrC+dQ==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dev: false
 
   /eslint-plugin-sql/2.2.1:
