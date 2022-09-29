@@ -10,6 +10,7 @@ import eslint from "./eslint.js";
 import pluginCompat from "./plugins/compat.js";
 import pluginDiff from "./plugins/diff.js";
 import pluginTypeScript from "./plugins/typescript.js";
+import pluginYML from "./plugins/yml.js";
 
 import configNext from "./configs/next.js";
 import configPrettier from "./configs/prettier.js";
@@ -22,6 +23,7 @@ const mergedConfig = createMergedConfig([
 	pluginCompat,
 	isContinuousIntegration() && pluginDiff,
 	hasModule("typescript") && pluginTypeScript,
+	pluginYML,
 
 	// Configs
 	/**
