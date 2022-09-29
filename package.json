@@ -1,0 +1,44 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
+	"type": "module",
+	"name": "@workspace/root",
+	"homepage": "https://github.com/adchitects/configs",
+	"repository": "adchitects/configs.git",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16",
+		"pnpm": ">=7"
+	},
+	"packageManager": "pnpm@7.11.0",
+	"scripts": {
+		"build": "turbo run build -v",
+		"clean": "pnpm clean:cache ; turbo run clean -v",
+		"clean:cache": "del \"./node_modules/.cache\"",
+		"contributors:add": "all-contributors add",
+		"contributors:generate": "all-contributors generate",
+		"deps:check": "pnpm lint:deps ; turbo run lint:deps -v",
+		"deps:upgrade": "pnpm deps:upgrade:root ; pnpm deps:upgrade:packages ; pnpm:deps:upgrade:shared",
+		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
+		"deps:upgrade:packages": "pnpm upgrade --interactive --latest --filter \"@adchitects/*\"",
+		"deps:upgrade:shared": "pnpm upgrade --interactive --latest --filter \"@workspace/shared\"",
+		"dev": "turbo run dev -v",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings ; pnpm turbo run lint -v",
+		"lint:deps": "concurrently \"depcheck\" --group --timings",
+		"preinstall": "npx only-allow pnpm",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@changesets/changelog-github": "^0.4.6",
+		"@changesets/cli": "^2.24.4",
+		"all-contributors-cli": "^6.20.4",
+		"browserslist": "^4.21.4",
+		"concurrently": "^7.4.0",
+		"del-cli": "^5.0.0",
+		"depcheck": "^1.4.3",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"turbo": "^1.4.7",
+		"typescript": "^4.8.3"
+	}
+}

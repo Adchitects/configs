@@ -1,0 +1,36 @@
+{
+  "projectName": "@adchitects/configs",
+  "projectOwner": "adchitects",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 60,
+  "commit": true,
+  "commitConvention": "gitmoji",
+  "contributors": [
+    {
+      "login": "xeho91",
+      "name": "Matt Kadlubowski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18627568?v=4",
+      "profile": "https://github.com/xeho91",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "acwo",
+      "name": "Marcin Owczarzak",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16150147?v=4",
+      "profile": "https://www.marcinowczarzak.pl/",
+      "contributions": [
+        "code",
+        "ideas",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 4
+}

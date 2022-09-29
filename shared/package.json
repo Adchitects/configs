@@ -1,0 +1,43 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
+	"type": "module",
+	"name": "@workspace/shared",
+	"version": "0.0.0",
+	"engines": {
+		"node": ">=16"
+	},
+	"exports": {
+		"./configuration": "./dist/configuration.js",
+		"./environment": "./dist/environment.js",
+		"./module": "./dist/module.js"
+	},
+	"typesVersions": {
+		"*": {
+			"*": [
+				"./dist/*"
+			]
+		}
+	},
+	"scripts": {
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"dev": "tsup --watch",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:types": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@adchitects/typescript-config": "workspace:*",
+		"@types/node": "^18.7.18",
+		"tsup": "^6.2.3",
+		"type-fest": "^2.19.0",
+		"typescript": "^4.8.3"
+	},
+	"dependencies": {
+		"deepmerge-ts": "^4.2.1",
+		"read-pkg-up": "^9.1.0"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"license": "MIT",
+	"$schema": "https://json.schemastore.org/package",
+	"type": "commonjs",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@adchitects/stylelint-config",
+	"version": "0.0.0",
+	"description": "@adchitects extendable configuration for stylelint.",
+	"keywords": [
+		"config",
+		"linter",
+		"stylelint"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/adchitects/configs/tree/main/packages/stylelint",
+	"repository": "https://github.com/adchitects/configs/tree/main/packages/stylelint",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16"
+	},
+	"main": "dist/index.js",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"dev": "tsup --watch",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:types": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@adchitects/typescript-config": "workspace:*",
+		"@types/node": "^18.7.18",
+		"@workspace/shared": "workspace:*",
+		"tsup": "^6.2.3",
+		"typescript": "^4.8.3"
+	}
+}
