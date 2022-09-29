@@ -43,6 +43,7 @@ importers:
   packages/eslint:
     specifiers:
       '@adchitects/typescript-config': workspace:*
+      '@rushstack/eslint-patch': ^1.2.0
       '@types/eslint': ^8.4.6
       '@types/node': ^18.7.18
       '@workspace/shared': workspace:*
@@ -50,6 +51,7 @@ importers:
       tsup: ^6.2.3
       typescript: ^4.8.3
     dependencies:
+      '@rushstack/eslint-patch': 1.2.0
       eslint-define-config: 1.7.0
     devDependencies:
       '@adchitects/typescript-config': link:../typescript
@@ -598,6 +600,10 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
     dev: true
+
+  /@rushstack/eslint-patch/1.2.0:
+    resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
+    dev: false
 
   /@sideway/address/4.1.4:
     resolution: {integrity: sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw==}
