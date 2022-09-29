@@ -8,6 +8,16 @@
 ➡️ This project is a [monorepo] made with [pnpm workspace] and powered by
 [changesets], [turborepo].
 
+> This project is heavily inspired by another project - [@terminal-nerds/config].\
+> The author [@xeho91] from this other project is also one of the developers
+> from [@adchitects] at the moment of creation.\
+> There are full blessings from him to use his idea & work.\
+> The difference is that this one project is tweaked to the company's needs.
+
+[@terminal-nerds/config]: https://github.com/terminal-nerds/config
+[@xeho91]: https://github.com/xeho91
+[@adchitects]: https://github.com/adchitects
+
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [pnpm workspace]: https://pnpm.io/workspaces
 [pnpm workspace badge]: https://img.shields.io/badge/-pnpm%20workspace-informational?style=for-the-badge&logo=pnpm
@@ -88,12 +98,24 @@ registry].
 
 ---
 
+## License
+
+[![License badge]](./LICENSE.md "Project's license")
+
+⚖️ **The code, including packages** are licensed under the [MIT license](./LICENSE.md).
+
+[![FOSSA Status Card]][fossa status]
+
+[license badge]: https://img.shields.io/github/license/adchitects/configs?style=for-the-badge
+[fossa status card]: https://app.fossa.com/api/projects/custom%2B20521%2Fgit%40github.com%3Aadchitects%2Fconfigs.git.svg?type=large
+[fossa status]: https://app.fossa.com/projects/custom%2B20521%2Fgit%40github.com%3Aadchitects%2Fconfigs.git?ref=badge_large
+
+---
+
 ## Security
 
 ![workflow maintenance badge]\
-[![lgtm alerts badge]][lgtm report]
 ![Snyk vulnerabilities badge]
-[![SonarCloud badge]][sonarcloud report]
 
 🔐 Our team has a shared [Security Policy]. If you have concerns or found an
 issue, please follow the instructions, and
@@ -103,11 +125,7 @@ remember about one thing:
 > vulnerability**.
 
 [workflow maintenance badge]: https://img.shields.io/github/workflow/status/adchitects/configs/Maintenance?label=Maintenance&logo=github&style=for-the-badge
-[lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/adchitects/configs?style=for-the-badge&logo=lgtm
-[lgtm report]: https://lgtm.com/projects/g/adchitects/configs
 [snyk vulnerabilities badge]: https://img.shields.io/snyk/vulnerabilities/github/adchitects/configs?logo=snyk&style=for-the-badge
-[sonarcloud badge]: https://img.shields.io/sonar/quality_gate/adchitects_configs/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge
-[sonarcloud report]: https://sonarcloud.io/summary/overall?id=adchitects_configs
 [security policy]: https://github.com/adchitects/configs/security/policy
 
 ---
@@ -125,7 +143,7 @@ involved.
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [contributing]: ./.github/CONTRIBUTING.md
 [contributors badge]: https://img.shields.io/github/contributors/adchitects/configs?style=for-the-badge
-[contributors url]: #contributors
+[contributors url]: #project-contributors
 
 ### Project contributors
 

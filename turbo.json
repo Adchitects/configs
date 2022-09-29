@@ -16,6 +16,11 @@
 			"outputs": [],
 			"cache": false
 		},
+		"format": {
+			"dependsOn": [],
+			"outputs": [],
+			"cache": true
+		},
 		"lint": {
 			"dependsOn": [],
 			"outputs": [],

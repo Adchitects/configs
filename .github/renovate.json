@@ -1,0 +1,88 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["github>adchitects/.github//.github/renovate"],
+	"packageRules": [
+		{
+			"groupName": "project monorepo tools",
+			"addLabels": ["🧰 monorepo"],
+			"packagePatterns": [
+				"all-contributors-cli",
+				"browserslist",
+				"changesets",
+				"concurrently",
+				"del-cli",
+				"husky",
+				"lint-staged",
+				"node-jq",
+				"tsup",
+				"turbo"
+			]
+		},
+		{
+			"groupName": "helpers dependencies",
+			"addLabels": ["🧰 monorepo"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"packagePatterns": [
+				"deepmerge",
+				"pkg-up",
+				"read-pkg-up",
+				"type-fest"
+			]
+		},
+		{
+			"groupName": "ESLint dependencies",
+			"addLabels": ["📦 package:eslint-config"],
+			"matchPackageNames": [
+				"@typescript-eslint/eslint-parser",
+				"@typescript-eslint/eslint-plugin",
+				"eslint-config-prettier"
+			],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"packagePatterns": ["eslint"]
+		},
+		{
+			"groupName": "markdownlint dependencies",
+			"addLabels": ["📦 package:markdownlint-config"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"packagePatterns": ["markdownlint"]
+		},
+		{
+			"groupName": "Prettier dependencies",
+			"addLabels": ["📦 package:prettier-config"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"excludePackagePatterns": [
+				"eslint-config-prettier",
+				"stylelint-config-prettier"
+			],
+			"packagePatterns": ["prettier"]
+		},
+		{
+			"groupName": "Stylelint dependencies",
+			"addLabels": ["📦 package:stylelint-config"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"packagePatterns": ["stylelint", "stylelint-config-prettier"]
+		},
+		{
+			"groupName": "syncpack dependencies",
+			"addLabels": ["📦 package:syncpack-config"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"packagePatterns": ["syncpack"]
+		},
+		{
+			"groupName": "TypeScript dependencies",
+			"addLabels": ["📦 package:typescript-config"],
+			"matchPackageNames": ["@types/node", "tslib", "typescript"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"excludePackageNames": [
+				"@typescript-eslint/eslint-parser",
+				"@typescript-eslint/eslint-plugin"
+			]
+		},
+		{
+			"groupName": "project prerequisities",
+			"addLabels": ["🧰 monorepo"],
+			"excludePackageNames": ["node-jq"],
+			"packagePatterns": ["node", "pnpm"]
+		}
+	]
+}
