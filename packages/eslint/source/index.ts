@@ -9,7 +9,10 @@ import eslint from "./eslint.js";
 
 import pluginCompat from "./plugins/compat.js";
 import pluginDiff from "./plugins/diff.js";
+import pluginJSXA11y from "./plugins/jsx-a11y.js";
 import pluginSonarJS from "./plugins/sonarjs.js";
+import pluginReact from "./plugins/react.js";
+import pluginReactHooks from "./plugins/react-hooks.js";
 import pluginRegexp from "./plugins/regexp.js";
 import pluginSQL from "./plugins/sql.js";
 import pluginStorybook from "./plugins/storybook.js";
@@ -28,6 +31,9 @@ const mergedConfig = createMergedConfig([
 	// Plugins
 	pluginCompat,
 	isContinuousIntegration() && pluginDiff,
+	(hasModule("react") || hasModule("preact")) && pluginJSXA11y,
+	(hasModule("react") || hasModule("preact")) && pluginReact,
+	(hasModule("react") || hasModule("preact")) && pluginReactHooks,
 	pluginRegexp,
 	pluginSonarJS,
 	pluginSQL,
