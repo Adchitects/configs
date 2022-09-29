@@ -6,6 +6,9 @@ import { hasModule } from "@workspace/shared/module";
 
 import eslint from "./eslint.js";
 
+import configNext from "./configs/next.js";
+import configPrettier from "./configs/prettier.js";
+
 const mergedConfig = createMergedConfig([
 	// Base
 	eslint,
