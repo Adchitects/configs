@@ -10,8 +10,8 @@
 	"description": "@adchitects extendable configuration for ESLint.",
 	"keywords": [
 		"config",
-		"linter",
-		"eslint"
+		"eslint",
+		"linter"
 	],
 	"license": "MIT",
 	"homepage": "https://github.com/adchitects/configs/tree/main/packages/eslint",
@@ -30,6 +30,8 @@
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",

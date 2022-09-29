@@ -19,10 +19,12 @@
 		"contributors:generate": "all-contributors generate",
 		"deps:check": "pnpm lint:deps ; turbo run lint:deps -v",
 		"deps:upgrade": "pnpm deps:upgrade:root ; pnpm deps:upgrade:packages ; pnpm:deps:upgrade:shared",
-		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
 		"deps:upgrade:packages": "pnpm upgrade --interactive --latest --filter \"@adchitects/*\"",
+		"deps:upgrade:root": "pnpm upgrade --interactive --latest",
 		"deps:upgrade:shared": "pnpm upgrade --interactive --latest --filter \"@workspace/shared\"",
 		"dev": "turbo run dev -v",
+		"format": "concurrently \"pnpm:format:*\" --group --timings ; turbo run format -v",
+		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings ; pnpm turbo run lint -v",
 		"lint:deps": "concurrently \"depcheck\" --group --timings",
 		"lint:md": "markdownlint . --dot --ignore-path \"./.gitignore\" --ignore \"./{.changeset,shared,packages}/**/*\"",
@@ -31,6 +33,7 @@
 	},
 	"devDependencies": {
 		"@adchitects/markdownlint-config": "workspace:^0.0.0",
+		"@adchitects/syncpack-config": "workspace:^0.0.0",
 		"@changesets/changelog-github": "^0.4.6",
 		"@changesets/cli": "^2.24.4",
 		"all-contributors-cli": "^6.20.4",
@@ -38,9 +41,10 @@
 		"concurrently": "^7.4.0",
 		"del-cli": "^5.0.0",
 		"depcheck": "^1.4.3",
-		"markdownlint-cli": "^0.32.2",
 		"husky": "^8.0.1",
+		"markdownlint-cli": "^0.32.2",
 		"lint-staged": "^13.0.3",
+		"syncpack": "^8.2.4",
 		"turbo": "^1.4.7",
 		"typescript": "^4.8.3"
 	}

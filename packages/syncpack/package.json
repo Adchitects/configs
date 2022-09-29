@@ -30,15 +30,21 @@
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
 	},
+	"peerDependencies": {
+		"syncpack": "^8.2.4"
+	},
 	"devDependencies": {
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "^18.7.18",
 		"@workspace/shared": "workspace:*",
+		"syncpack": "^8.2.4",
 		"tsup": "^6.2.3",
 		"typescript": "^4.8.3"
 	}

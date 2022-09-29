@@ -1,5 +1,4 @@
 {
-	"license": "MIT",
 	"$schema": "https://json.schemastore.org/package",
 	"type": "commonjs",
 	"publishConfig": {
@@ -30,6 +29,8 @@
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
 		"clean:build": "del \"./dist\"",
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:syncpack": "syncpack format",
 		"lint:all": "pnpm lint:deps",
 		"lint:deps": "depcheck",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
