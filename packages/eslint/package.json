@@ -51,6 +51,7 @@
 	},
 	"dependencies": {
 		"@rushstack/eslint-patch": "^1.2.0",
+		"eslint-config-prettier": "^8.5.0",
 		"eslint-define-config": "^1.7.0"
 	}
 }
