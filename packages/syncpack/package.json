@@ -13,6 +13,7 @@
 		"formatter",
 		"syncpack"
 	],
+	"license": "MIT",
 	"homepage": "https://github.com/adchitects/configs/tree/main/packages/syncpack",
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/syncpack",
 	"bugs": "https://github.com/adchitects/configs/issues",
@@ -33,6 +34,7 @@
 		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {

@@ -1,3 +1,4 @@
 # Shared
 
-This is a directory for building reusable/shared snippets, which empowers building the configuration packages.
+This one directory is for building reusable/shared snippets,
+which empowers building the configuration packages.

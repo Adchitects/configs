@@ -112,28 +112,19 @@ jobs:
             # https://github.com/JamieMason/syncpack
             run: pnpm syncpack list-mismatches
 
-    # TODO: Configure it when we decide on Security Policy
-    # security_codeql:
-    #     name: Security
-    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/codeql.yml
-    #     uses: adchitects/.github/.github/workflows/codeql.yml@main
+    security_git-guardian:
+        name: Security
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/git-guardian.yml
+        uses: adchitects/.github/.github/workflows/git-guardian.yml@main
+        secrets:
+            GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
 
-    # TODO: Configure it when we decide on Security Policy
-    # security_codeql:
-    # security_git-guardian:
-    #     name: Security
-    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/git-guardian.yml
-    #     uses: adchitects/.github/.github/workflows/git-guardian.yml@main
-    #     secrets:
-    #         GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
-
-    # TODO: Configure it when we decide on Security Policy
-    # security_snyk:
-    #     name: Security
-    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/snyk.yml
-    #     uses: adchitects/.github/.github/workflows/snyk.yml@main
-    #     secrets:
-    #         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+    security_snyk:
+        name: Security
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/snyk.yml
+        uses: adchitects/.github/.github/workflows/snyk.yml@main
+        secrets:
+            SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
     release:
         # Automatic release workflow with Changesets
@@ -144,11 +135,11 @@ jobs:
             [
                 build,
                 lint_depcheck,
-                lint_eslint,
-                lint_markdownlint,
-                lint_prettier,
+                # TODO: Enable when they're ready
+                # lint_eslint,
+                # lint_markdownlint,
+                # lint_prettier,
                 lint_syncpack,
-                security_codeql,
                 security_git-guardian,
                 security_snyk,
             ]
