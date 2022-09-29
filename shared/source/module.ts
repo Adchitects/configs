@@ -11,6 +11,21 @@ export function readPackageJSON(): PackageJson {
 	}
 }
 
+/** Checks if the `package.json` file has the keywords */
+export function hasKeywords(expectedKeywords: Array<string>): boolean {
+	const { keywords } = readPackageJSON();
+
+	for (const keyword of new Set(keywords)) {
+		if (expectedKeywords.includes(keyword)) {
+			// Has!
+			return true;
+		}
+	}
+
+	// Nope :(
+	return false;
+}
+
 export function hasModule(name: string): boolean {
 	const { dependencies, devDependencies } = readPackageJSON();
 
@@ -33,3 +48,4 @@ export function isCommonJS() {
 
 	return type === "commonjs";
 }
+
