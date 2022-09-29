@@ -115,9 +115,7 @@ registry].
 ## Security
 
 ![workflow maintenance badge]\
-[![lgtm alerts badge]][lgtm report]
 ![Snyk vulnerabilities badge]
-[![SonarCloud badge]][sonarcloud report]
 
 🔐 Our team has a shared [Security Policy]. If you have concerns or found an
 issue, please follow the instructions, and
@@ -127,11 +125,7 @@ remember about one thing:
 > vulnerability**.
 
 [workflow maintenance badge]: https://img.shields.io/github/workflow/status/adchitects/configs/Maintenance?label=Maintenance&logo=github&style=for-the-badge
-[lgtm alerts badge]: https://img.shields.io/lgtm/alerts/github/adchitects/configs?style=for-the-badge&logo=lgtm
-[lgtm report]: https://lgtm.com/projects/g/adchitects/configs
 [snyk vulnerabilities badge]: https://img.shields.io/snyk/vulnerabilities/github/adchitects/configs?logo=snyk&style=for-the-badge
-[sonarcloud badge]: https://img.shields.io/sonar/quality_gate/adchitects_configs/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge
-[sonarcloud report]: https://sonarcloud.io/summary/overall?id=adchitects_configs
 [security policy]: https://github.com/adchitects/configs/security/policy
 
 ---
