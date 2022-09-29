@@ -57,6 +57,7 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-define-config": "^1.7.0",
 		"eslint-plugin-compat": "^4.0.2",
-		"eslint-plugin-diff": "^2.0.1"
+		"eslint-plugin-diff": "^2.0.1",
+		"eslint-plugin-yml": "^1.2.0"
 	}
 }
