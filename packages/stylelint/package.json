@@ -1,5 +1,4 @@
 {
-	"license": "MIT",
 	"$schema": "https://json.schemastore.org/package",
 	"type": "commonjs",
 	"publishConfig": {
@@ -14,6 +13,7 @@
 		"linter",
 		"stylelint"
 	],
+	"license": "MIT",
 	"homepage": "https://github.com/adchitects/configs/tree/main/packages/stylelint",
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/stylelint",
 	"bugs": "https://github.com/adchitects/configs/issues",
@@ -32,9 +32,11 @@
 		"dev": "tsup --watch",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
 		"format:prettier": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\" --write",
+		"format:syncpack": "syncpack format",
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
 		"lint:format": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
 	},
 	"devDependencies": {

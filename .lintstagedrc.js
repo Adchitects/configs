@@ -20,13 +20,13 @@ const config = {
 	// "*.md": [`markdownlint --ignore "./.changeset/*.md"`],
 
 	// TypeScript types (in each package, because of different configs)
-	"./shared/**/*.ts": () => `tsc --project ./shared/tsconfig.json --noEmit`,
-	"./packages/eslint/source/**/*.ts": () =>
-		`tsc --project ./packages/eslint/tsconfig.json --noEmit`,
-	"./packages/prettier/source/**/*.ts": () =>
-		`tsc --project ./packages/prettier/tsconfig.json --noEmit`,
-	"./packages/stylelint/source/**/*.ts": () =>
-		`tsc --project ./packages/stylelint/tsconfig.json --noEmit`,
+	// "./shared/**/*.ts": () => `tsc --project ./shared/tsconfig.json --noEmit`,
+	// "./packages/eslint/source/**/*.ts": () =>
+	// 	`tsc --project ./packages/eslint/tsconfig.json --noEmit`,
+	// "./packages/prettier/source/**/*.ts": () =>
+	// 	`tsc --project ./packages/prettier/tsconfig.json --noEmit`,
+	// "./packages/stylelint/source/**/*.ts": () =>
+	// 	`tsc --project ./packages/stylelint/tsconfig.json --noEmit`,
 };
 
 export default config;

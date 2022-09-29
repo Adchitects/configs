@@ -1,5 +1,4 @@
 {
-	"license": "MIT",
 	"$schema": "https://json.schemastore.org/package",
 	"type": "commonjs",
 	"publishConfig": {
@@ -14,6 +13,7 @@
 		"linter",
 		"markdownlint"
 	],
+	"license": "MIT",
 	"homepage": "https://github.com/adchitects/configs/tree/main/packages/markdownlint",
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/markdownlint",
 	"bugs": "https://github.com/adchitects/configs/issues",
@@ -31,12 +31,18 @@
 		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
 		"format": "concurrently \"pnpm:format:*\" --group --timings",
 		"format:prettier": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\" --write",
+		"format:syncpack": "syncpack format",
 		"lint:all": "pnpm lint:deps",
 		"lint:deps": "depcheck",
-		"lint:format": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\""
+		"lint:format": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
+	},
+	"peerDependencies": {
+		"markdownlint-cli": "0.32.2"
 	},
 	"devDependencies": {
 		"make-dir-cli": "^3.0.0",
+		"markdownlint": "^0.26.2",
 		"node-jq": "^2.3.3",
 		"strip-json-comments-cli": "^2.0.2"
 	}
