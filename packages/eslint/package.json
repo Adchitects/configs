@@ -58,6 +58,8 @@
 		"eslint-define-config": "^1.7.0",
 		"eslint-plugin-compat": "^4.0.2",
 		"eslint-plugin-diff": "^2.0.1",
+		"eslint-plugin-json-schema-validator": "^4.0.2",
+		"eslint-plugin-jsonc": "^2.4.0",
 		"eslint-plugin-jsx-a11y": "^6.6.1",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-react": "^7.31.8",
