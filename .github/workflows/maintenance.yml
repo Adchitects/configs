@@ -15,14 +15,14 @@ permissions:
 jobs:
     security_git-guardian:
         name: Security
-        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/git-guardian.yml
-        uses: terminal-nerds/.github/.github/workflows/git-guardian.yml@main
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/git-guardian.yml
+        uses: adchitects/.github/.github/workflows/git-guardian.yml@main
         secrets:
             GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
 
     security_snyk:
         name: Security
-        # https://github.com/terminal-nerds/.github/blob/main/.github/workflows/snyk.yml
-        uses: terminal-nerds/.github/.github/workflows/snyk.yml@main
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/snyk.yml
+        uses: adchitects/.github/.github/workflows/snyk.yml@main
         secrets:
             SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
