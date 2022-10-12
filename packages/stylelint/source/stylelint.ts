@@ -28,6 +28,32 @@ const config: Partial<Config> = {
 	],
 
 	rules: {
+		"rule-empty-line-before": ["always", {
+			"ignore": ["after-comment", "first-nested"]
+		}],
+		"selector-combinator-space-after": "always",
+		"declaration-block-trailing-semicolon": "always",
+		"declaration-colon-space-before": "never",
+		"declaration-colon-space-after": "always",
+		"function-url-quotes": "always",
+		"selector-pseudo-element-colon-notation": "double",
+		"selector-pseudo-class-parentheses-space-inside": "never",
+		"media-feature-range-operator-space-before": "always",
+		"media-feature-range-operator-space-after": "always",
+		"media-feature-parentheses-space-inside": "never",
+		"media-feature-colon-space-before": "never",
+		"media-feature-colon-space-after": "always",
+		"scss/at-rule-no-unknown": true,
+		"no-duplicate-selectors": null,
+		"block-no-empty": null,
+		"at-rule-no-unknown": null,
+		"no-descending-specificity": null,
+		"color-hex-case": null,
+		"color-hex-length": null,
+		"no-eol-whitespace": null,
+		"declaration-block-semicolon-newline-after": null,
+		"comment-empty-line-before": null,
+		"comment-no-empty": null,
 		// https://stylelint.io/user-guide/rules/list
 
 		/**
