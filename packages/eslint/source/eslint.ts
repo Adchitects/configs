@@ -45,7 +45,7 @@ const config = defineConfig({
 		"max-len": [
 			"warn",
 			{
-				code: 10"off",
+				code: 10,
 				tabWidth: 4,
 				ignoreStrings: true,
 				ignoreTemplateLiterals: true,
