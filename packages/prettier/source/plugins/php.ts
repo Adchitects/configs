@@ -1,11 +1,11 @@
 // https://github.com/prettier/plugin-php
 const config = {
-  plugins: ["@prettier/plugin-php"],
-
-  // TODO: @acwo: Tweak it to what you need, the below ones is just quick examples from the docs
-  phpVersion: "8.1",
-  trailingCommaPHP: true,
-  braceStyle: "psr-2",
+	plugins: ["@prettier/plugin-php"],
+	phpVersion: "7.4",
+	printWidth: 999999, // default is 80 and we don't want to have it
+	singleQuote: false,
+	trailingCommaPHP: true,
+	braceStyle: "1tbs",
 };
 
 export default config;
