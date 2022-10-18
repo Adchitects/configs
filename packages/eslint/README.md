@@ -1,14 +1,14 @@
-# @terminal-nerds/eslint-config
+# @adchitects/eslint-config
 
 ![package version badge]
 
 ➡️ **Extendable ![eslint icon] [ESLint] configuration**, part of the
-[terminal-nerds/configs] project.
+[adchitects/configs] project.
 
-[package version badge]: https://img.shields.io/npm/v/@terminal-nerds/eslint-config/latest?style=for-the-badge&logo=npm
+[package version badge]: https://img.shields.io/npm/v/@adchitects/eslint-config/latest?style=for-the-badge&logo=npm
 [eslint]: https://eslint.org/
 [eslint icon]: https://api.iconify.design/logos/eslint.svg
-[terminal-nerds/configs]: https://github.com/terminal-nerds/configs
+[adchitects/configs]: https://github.com/adchitects/configs
 
 ---
 
@@ -17,8 +17,8 @@
 [![node.js version support badge]][node.js]
 [![supported eslint version badge]][eslint]
 
-[node.js version support badge]: https://img.shields.io/node/v-lts/@terminal-nerds/eslint-config?style=for-the-badge&logo=nodedotjs
-[supported eslint version badge]: https://img.shields.io/github/package-json/dependency-version/terminal-nerds/configs/peer/eslint?filename=packages%2Feslint%2Fpackage.json&logo=eslint&style=for-the-badge
+[node.js version support badge]: https://img.shields.io/node/v-lts/@adchitects/eslint-config?style=for-the-badge&logo=nodedotjs
+[supported eslint version badge]: https://img.shields.io/github/package-json/dependency-version/adchitects/configs/peer/eslint?filename=packages%2Feslint%2Fpackage.json&logo=eslint&style=for-the-badge
 
 ℹ️ This configuration package require these tools to use locally on your
 device(s):
@@ -49,7 +49,7 @@ device(s):
    choice** _(in our case, we use ![pnpm icon] [pnpm])_.
 
     ```sh
-     pnpm install --save-dev eslint @terminal-nerds/eslint-config
+     pnpm install --save-dev eslint @adchitects/eslint-config
     ```
 
 1. **Create an ![eslint icon] [ESLint configuration file] - `.eslintrc.(c)js`**.
@@ -58,7 +58,7 @@ device(s):
 
     ```js
     const config = {
-    	extends: "@terminal-nerds",
+    	extends: "@adchitects",
 
     	env: {
     		// Specify the environment(s)
@@ -85,8 +85,8 @@ device(s):
 ⚙️ This configuration module loads configurations and plugins options
 _conditionally_.
 
-[dependencies badge]: https://img.shields.io/librariesio/release/npm/@terminal-nerds/eslint-config?style=for-the-badge
-[dependencies url]: https://libraries.io/npm/@terminal-nerds%2Feslint-config
+[dependencies badge]: https://img.shields.io/librariesio/release/npm/@adchitects/eslint-config?style=for-the-badge
+[dependencies url]: https://libraries.io/npm/@adchitects%2Feslint-config
 
 ### Configurations
 
@@ -173,11 +173,11 @@ _conditionally_.
 [![workflow security badge]][security policy]
 
 🔐 For more information, please refer to the [Security section] at the root of the
-[terminal-nerds/configs] monorepo.
+[adchitects/configs] monorepo.
 
-[workflow security badge]: https://img.shields.io/github/workflow/status/terminal-nerds/configs/Maintenance?label=Security&logo=github&style=for-the-badge
-[security section]: https://github.com/terminal-nerds/configs#security
-[security policy]: https://github.com/terminal-nerds/configs/security/policy
+[workflow security badge]: https://img.shields.io/github/workflow/status/adchitects/configs/Maintenance?label=Security&logo=github&style=for-the-badge
+[security section]: https://github.com/adchitects/configs#security
+[security policy]: https://github.com/adchitects/configs/security/policy
 
 ---
 
@@ -187,12 +187,12 @@ _conditionally_.
 
 🤝 **Contributions of any kind are welcome!**
 
-Please refer to the monorepo _([terminal-nerds/configs])_ project's
+Please refer to the monorepo _([adchitects/configs])_ project's
 [CONTRIBUTING file] for more information if you wish to get involved.
 
-[contributing file]: https://github.com/terminal-nerds/configs/blob/main/.github/CONTRIBUTING.md
-[contributors badge]: https://img.shields.io/github/contributors/terminal-nerds/configs?style=for-the-badge
-[contributors url]: https://github.com/terminal-nerds/configs#contributors
+[contributing file]: https://github.com/adchitects/configs/blob/main/.github/CONTRIBUTING.md
+[contributors badge]: https://img.shields.io/github/contributors/adchitects/configs?style=for-the-badge
+[contributors url]: https://github.com/adchitects/configs#contributors
 
 ---
 
@@ -201,11 +201,11 @@ Please refer to the monorepo _([terminal-nerds/configs])_ project's
 [![license badge]][license]
 
 ⚖️ For more information, please refer to the [License section] at the root of
-the [terminal-nerds/configs] monorepo.
+the [adchitects/configs] monorepo.
 
-[license badge]: https://img.shields.io/github/license/terminal-nerds/configs?style=for-the-badge
-[license]: https://github.com/terminal-nerds/configs/blob/main/LICENSE.md
-[license section]: https://github.com/terminal-nerds/configs#License
+[license badge]: https://img.shields.io/github/license/adchitects/configs?style=for-the-badge
+[license]: https://github.com/adchitects/configs/blob/main/LICENSE.md
+[license section]: https://github.com/adchitects/configs#License
 
 ---
 
