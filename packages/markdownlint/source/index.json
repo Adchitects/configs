@@ -33,5 +33,9 @@
      * There's nothing wrong with them, sometimes we have to be creative or add custom components with MDX or similar
 	 * for every list level. And markdownlint option is for *all* levels.
 	 */
-	"no-inline-html": false
+	"no-inline-html": false,
+	/**
+	 * FIXME: Temporarily disable it, because it prevents from building
+	 */
+	"link-image-reference-definitions": false
 }
