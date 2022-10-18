@@ -4,10 +4,10 @@ importers:
 
   .:
     specifiers:
-      '@adchitects/eslint-config': workspace:^0.0.0
-      '@adchitects/markdownlint-config': workspace:^0.0.0
-      '@adchitects/prettier-config': workspace:^0.0.0
-      '@adchitects/syncpack-config': workspace:^0.0.0
+      '@adchitects/eslint-config': workspace:*
+      '@adchitects/markdownlint-config': workspace:*
+      '@adchitects/prettier-config': workspace:*
+      '@adchitects/syncpack-config': workspace:*
       '@changesets/changelog-github': ^0.4.6
       '@changesets/cli': ^2.24.4
       all-contributors-cli: ^6.20.4
