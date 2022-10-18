@@ -6,6 +6,7 @@ const config: Partial<Config> = {
 
 	rules: {
         // Rules from this plugin to be adjusted...
+		"scss/at-rule-no-unknown": true,
 	},
 };
 

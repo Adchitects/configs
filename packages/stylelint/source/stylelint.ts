@@ -35,7 +35,6 @@ const config: Partial<Config> = {
 		"color-hex-length": null,
 		"comment-empty-line-before": null,
 		"comment-no-empty": null,
-		"scss/at-rule-no-unknown": true,
 		/**
 		 * @see: https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties
 		 * RATIONALE: Longhand properties are more readable and descriptive.
