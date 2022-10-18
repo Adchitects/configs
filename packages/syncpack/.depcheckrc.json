@@ -3,5 +3,5 @@
 		"@adchitects/typescript-config",
 		"@types/node",
 		"@workspace/shared"
-    ]
+	]
 }

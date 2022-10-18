@@ -2,11 +2,10 @@
 
 const config = {
 	// Prettier
-    // TODO: Configure when Prettier is ready
-	// "*": ["pretty-quick --check --staged"],
+	"*": (file) => [`prettier --check "${file}"`],
 
 	// ESLint
-    // TODO: Configure when ESLint is ready
+	// TODO: Configure when ESLint is ready
 	// "*.{js,json,ts,yml,yaml}": ["eslint"],
 
 	// depcheck & syncpack
@@ -17,7 +16,7 @@ const config = {
 	// ],
 
 	// markdownlint
-    // TODO: Configure when markdownlintLint is ready
+	// TODO: Configure when markdownlintLint is ready
 	// "*.md": [`markdownlint --ignore "./.changeset/*.md"`],
 
 	// TypeScript types (in each package, because of different configs)
