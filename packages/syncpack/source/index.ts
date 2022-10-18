@@ -43,6 +43,7 @@ const config: Partial<SyncpackConfig> = {
 	],
 	source: ["package.json", "packages/*/package.json", "shared/package.json"],
 	versionGroups: [],
+	workspace: false,
 };
 
 // eslint-disable-next-line unicorn/prefer-module
