@@ -131,8 +131,7 @@ jobs:
         name: Release
         # https://github.com/adchitects/.github/blob/main/.github/workflows/changesets.yml
         uses: adchitects/.github/.github/workflows/changesets.yml@main
-        needs:
-            [
+        needs: [
                 build,
                 lint_depcheck,
                 # TODO: Enable when they're ready
