@@ -41,11 +41,12 @@ const config = defineConfig({
 		 * RATIONALE:
 		 * Adjust to adapted code format and stop screaming on lines
 		 * that aren't too long yet.
+		 * DOCS: http://eslint.org/docs/rules/max-len
 		 */
 		"max-len": [
 			"warn",
 			{
-				code: 10,
+				code: 120,
 				tabWidth: 4,
 				ignoreStrings: true,
 				ignoreTemplateLiterals: true,
@@ -56,12 +57,14 @@ const config = defineConfig({
 		/**
 		 * RATIONALE:
 		 * Remind (warn) about possible logs that aren't supposed to be there.
+		 * DOCS: http://eslint.org/docs/rules/no-console
 		 */
 		"no-console": ["warn", { allow: ["debug"] }],
 
 		/**
 		 * RATIONALE:
 		 * The functions should have name to quickly explain their purpose - for the code readability.
+		 * DOCS: http://eslint.org/docs/rules/func-names
 		 */
 		"func-names": ["error", "as-needed"],
 
