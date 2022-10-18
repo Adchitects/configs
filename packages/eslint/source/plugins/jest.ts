@@ -14,15 +14,6 @@ const config = defineConfig({
 			patterns: "**/coverage",
 		},
 	]),
-	settings: {
-		jest: {
-			/* eslint-disable-next-line
-			   unicorn/prefer-module,
-			   @typescript-eslint/no-var-requires
-			*/
-			version: require("jest/package.json").version,
-		},
-	},
 });
 
 export default config;
