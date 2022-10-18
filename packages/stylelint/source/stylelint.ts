@@ -28,49 +28,14 @@ const config: Partial<Config> = {
 	],
 
 	rules: {
-		"rule-empty-line-before": ["always", {
-			"ignore": ["after-comment", "first-nested"]
-		}],
-		"selector-combinator-space-after": "always",
-		"declaration-block-trailing-semicolon": "always",
-		"declaration-colon-space-before": "never",
-		"declaration-colon-space-after": "always",
-		"function-url-quotes": "always",
-		"selector-pseudo-element-colon-notation": "double",
-		"selector-pseudo-class-parentheses-space-inside": "never",
-		"media-feature-range-operator-space-before": "always",
-		"media-feature-range-operator-space-after": "always",
-		"media-feature-parentheses-space-inside": "never",
-		"media-feature-colon-space-before": "never",
-		"media-feature-colon-space-after": "always",
-		"scss/at-rule-no-unknown": true,
-		"no-duplicate-selectors": null,
-		"block-no-empty": null,
+		// https://stylelint.io/user-guide/rules/list
 		"at-rule-no-unknown": null,
-		"no-descending-specificity": null,
+		"block-no-empty": null,
 		"color-hex-case": null,
 		"color-hex-length": null,
-		"no-eol-whitespace": null,
-		"declaration-block-semicolon-newline-after": null,
 		"comment-empty-line-before": null,
 		"comment-no-empty": null,
-		// https://stylelint.io/user-guide/rules/list
-
-		/**
-		 * @see https://stylelint.io/user-guide/rules/list/declaration-empty-line-before
-		 * RATIONALE: Prevent conflicting with `order` plugin
-		 */
-		"declaration-empty-line-before": undefined,
-
-		/**
-		 * @see: https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown
-		 * RATIONALE: Allow using CSS Modules
-		 */
-		"selector-pseudo-class-no-unknown": [
-			true,
-			{ ignorePseudoClasses: ["local", "global"] },
-		],
-
+		"scss/at-rule-no-unknown": true,
 		/**
 		 * @see: https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties
 		 * RATIONALE: Longhand properties are more readable and descriptive.
@@ -79,6 +44,38 @@ const config: Partial<Config> = {
 		 * Thus, for the reasons above, this rule is just being disabled, not enforced.
 		 */
 		"declaration-block-no-redundant-longhand-properties": undefined,
+		"declaration-block-semicolon-newline-after": null,
+		"declaration-block-trailing-semicolon": "always",
+		"declaration-colon-space-before": "never",
+		"declaration-colon-space-after": "always",
+		/**
+		 * @see https://stylelint.io/user-guide/rules/list/declaration-empty-line-before
+		 * RATIONALE: Prevent conflicting with `order` plugin
+		 */
+		"declaration-empty-line-before": undefined,
+		"no-duplicate-selectors": null,
+		"function-url-quotes": "always",
+		"media-feature-colon-space-before": "never",
+		"media-feature-colon-space-after": "always",
+		"media-feature-parentheses-space-inside": "never",
+		"media-feature-range-operator-space-before": "always",
+		"media-feature-range-operator-space-after": "always",
+		"no-descending-specificity": null,
+		"no-eol-whitespace": null,
+		"rule-empty-line-before": ["always", {
+			"ignore": ["after-comment", "first-nested"]
+		}],
+		"selector-combinator-space-after": "always",
+		/**
+		 * @see: https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown
+		 * RATIONALE: Allow using CSS Modules
+		 */
+		"selector-pseudo-class-no-unknown": [
+			true,
+			{ ignorePseudoClasses: ["local", "global"] },
+		],
+		"selector-pseudo-class-parentheses-space-inside": "never",
+		"selector-pseudo-element-colon-notation": "double",
 	},
 };
 
