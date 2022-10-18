@@ -29,12 +29,12 @@ const config: Partial<Config> = {
 
 	rules: {
 		// https://stylelint.io/user-guide/rules/list
-		"at-rule-no-unknown": null,
-		"block-no-empty": null,
-		"color-hex-case": null,
-		"color-hex-length": null,
-		"comment-empty-line-before": null,
-		"comment-no-empty": null,
+		"at-rule-no-unknown": undefined,
+		"block-no-empty": undefined,
+		"color-hex-case": undefined,
+		"color-hex-length": undefined,
+		"comment-empty-line-before": undefined,
+		"comment-no-empty": undefined,
 		/**
 		 * @see: https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties
 		 * RATIONALE: Longhand properties are more readable and descriptive.
@@ -43,7 +43,7 @@ const config: Partial<Config> = {
 		 * Thus, for the reasons above, this rule is just being disabled, not enforced.
 		 */
 		"declaration-block-no-redundant-longhand-properties": undefined,
-		"declaration-block-semicolon-newline-after": null,
+		"declaration-block-semicolon-newline-after": undefined,
 		"declaration-block-trailing-semicolon": "always",
 		"declaration-colon-space-before": "never",
 		"declaration-colon-space-after": "always",
@@ -52,15 +52,15 @@ const config: Partial<Config> = {
 		 * RATIONALE: Prevent conflicting with `order` plugin
 		 */
 		"declaration-empty-line-before": undefined,
-		"no-duplicate-selectors": null,
+		"no-duplicate-selectors": undefined,
 		"function-url-quotes": "always",
 		"media-feature-colon-space-before": "never",
 		"media-feature-colon-space-after": "always",
 		"media-feature-parentheses-space-inside": "never",
 		"media-feature-range-operator-space-before": "always",
 		"media-feature-range-operator-space-after": "always",
-		"no-descending-specificity": null,
-		"no-eol-whitespace": null,
+		"no-descending-specificity": undefined,
+		"no-eol-whitespace": undefined,
 		"rule-empty-line-before": ["always", {
 			"ignore": ["after-comment", "first-nested"]
 		}],
