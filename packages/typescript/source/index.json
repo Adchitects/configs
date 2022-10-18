@@ -1,0 +1,56 @@
+/* https://www.typescriptlang.org/tsconfig */
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		/* Type Checking */
+		"allowUnreachableCode": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"strict": true,
+
+		/* Modules */
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+
+		/* Emit */
+		"declaration": true,
+		"importHelpers": true,
+		"importsNotUsedAsValues": "error",
+		"newLine": "LF",
+		"noEmitOnError": true,
+		"sourceMap": true,
+
+		/* JavaScript support */
+		"allowJs": true,
+		"checkJs": true,
+
+		/* Interop Constraints */
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+
+		/* Language and Environment */
+		"target": "ESNext",
+		"lib": ["ESNext"],
+
+		/* Compiler Diagnostics */
+		"explainFiles": false,
+		"traceResolution": false,
+
+		/* Output Formatting */
+		"noErrorTruncation": true,
+		"preserveWatchOutput": false,
+		"pretty": true,
+
+		/* Completeness */
+		"skipLibCheck": true,
+
+		/* Project */
+		"incremental": true
+	}
+}

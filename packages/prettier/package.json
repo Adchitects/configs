@@ -1,0 +1,57 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"type": "commonjs",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@adchitects/prettier-config",
+	"version": "0.0.0",
+	"description": "@adchitects extendable configuration for prettier.",
+	"keywords": [
+		"config",
+		"formatter",
+		"prettier"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/adchitects/configs/tree/main/packages/prettier",
+	"repository": "https://github.com/adchitects/configs/tree/main/packages/prettier",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16"
+	},
+	"main": "dist/index.js",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:prettier": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\" --write",
+		"format:syncpack": "syncpack format",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:format": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\"",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
+		"lint:types": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"prettier": "^2.7.1"
+	},
+	"dependencies": {
+		"@prettier/plugin-php": "^0.19.1"
+	},
+	"devDependencies": {
+		"@adchitects/typescript-config": "workspace:*",
+		"@types/node": "^18.7.18",
+		"@types/prettier": "^2.7.0",
+		"@workspace/shared": "workspace:*",
+		"tsup": "^6.2.3",
+		"typescript": "^4.8.3"
+	}
+}

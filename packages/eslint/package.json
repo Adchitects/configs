@@ -1,0 +1,81 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"type": "commonjs",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@adchitects/eslint-config",
+	"version": "0.0.0",
+	"description": "@adchitects extendable configuration for ESLint.",
+	"keywords": [
+		"config",
+		"eslint",
+		"linter"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/adchitects/configs/tree/main/packages/eslint",
+	"repository": "https://github.com/adchitects/configs/tree/main/packages/eslint",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16"
+	},
+	"main": "dist/index.js",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:prettier": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\" --write",
+		"format:syncpack": "syncpack format",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:format": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\"",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
+		"lint:types": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"eslint": "^8.24.0"
+	},
+	"dependencies": {
+		"@rushstack/eslint-patch": "^1.2.0",
+		"@typescript-eslint/eslint-plugin": "^5.38.1",
+		"@typescript-eslint/parser": "^5.38.1",
+		"eslint-config-next": "^12.3.1",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-define-config": "^1.7.0",
+		"eslint-plugin-compat": "^4.0.2",
+		"eslint-plugin-diff": "^2.0.1",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jest": "^27.0.4",
+		"eslint-plugin-jest-dom": "^4.0.2",
+		"eslint-plugin-jest-formatting": "^3.1.0",
+		"eslint-plugin-json-schema-validator": "^4.0.2",
+		"eslint-plugin-jsonc": "^2.4.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-react": "^7.31.8",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-regexp": "^1.9.0",
+		"eslint-plugin-sonarjs": "^0.15.0",
+		"eslint-plugin-sql": "^2.2.2",
+		"eslint-plugin-storybook": "^0.6.4",
+		"eslint-plugin-testing-library": "^5.7.0",
+		"eslint-plugin-unicorn": "^43.0.2",
+		"eslint-plugin-yml": "^1.2.0"
+	},
+	"devDependencies": {
+		"@adchitects/typescript-config": "workspace:*",
+		"@types/eslint": "^8.4.6",
+		"@types/node": "^18.7.18",
+		"@workspace/shared": "workspace:*",
+		"tsup": "^6.2.3",
+		"typescript": "^4.8.3"
+	}
+}

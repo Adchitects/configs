@@ -1,0 +1,13 @@
+{
+	"ignore-bin-package": false,
+	"ignores": [
+		"@adchitects/*",
+        "@changesets/*",
+        "browserslist",
+		"concurrently",
+		"depcheck",
+        "lint-staged",
+        "typescript"
+	],
+	"skip-missing": false
+}

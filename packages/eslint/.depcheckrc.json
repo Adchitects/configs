@@ -1,0 +1,11 @@
+{
+	"ignores": [
+		"@adchitects/typescript-config",
+		"@typescript-eslint/*",
+		"@types/eslint",
+		"@types/node",
+		"eslint-config-*",
+		"eslint-plugin-*",
+		"*-eslint-parser"
+	]
+}

@@ -1,0 +1,9 @@
+# https://pnpm.io/pnpm-workspace_yaml
+---
+link-workspace-packages: true
+packages:
+    - "shared/**"
+    - "packages/**"
+prefer-workspace-packages: true
+shared-workspace-lockfile: true
+save-workspace-protocol: true

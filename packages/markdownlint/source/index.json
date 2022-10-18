@@ -1,0 +1,41 @@
+{
+	"$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint/main/schema/markdownlint-config-schema.json",
+	"default": true,
+	/*
+	 * RATIONALE:
+	 * Aligns with Prettier's line-length and easier to read
+	 * @see https://github.com/DavidAnson/markdownlint/blob/main/doc/Prettier.md
+	 */
+	"line-length": {
+		"line_length": 120,
+		"stern": false,
+		"tables": false
+	},
+	/*
+	 * RATIONALE:
+	 * Make it compatible with Prettier formatting
+	 * @see https://github.com/DavidAnson/markdownlint/blob/main/doc/Prettier.md
+	 */
+	"ul-indent": {
+		"indent": 4
+	},
+	/*
+	 * RATIONALE:
+	 * Disabled, because Prettier doesn't do the same indentation
+	 * for every list level. And markdownlint option is for *all* levels.
+	 */
+	"list-marker-space": false,
+	"no-hard-tabs": {
+		"code_blocks": false
+	},
+	/*
+	 * RATIONALE:
+     * There's nothing wrong with them, sometimes we have to be creative or add custom components with MDX or similar
+	 * for every list level. And markdownlint option is for *all* levels.
+	 */
+	"no-inline-html": false,
+	/**
+	 * FIXME: Temporarily disable it, because it prevents from building
+	 */
+	"link-image-reference-definitions": false
+}

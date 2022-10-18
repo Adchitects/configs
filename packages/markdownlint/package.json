@@ -1,0 +1,50 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"type": "commonjs",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@adchitects/markdownlint-config",
+	"version": "0.0.0",
+	"description": "@adchitects extendable configuration for markdownlint.",
+	"keywords": [
+		"config",
+		"linter",
+		"markdownlint"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/adchitects/configs/tree/main/packages/markdownlint",
+	"repository": "https://github.com/adchitects/configs/tree/main/packages/markdownlint",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16"
+	},
+	"main": "dist/index.json",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "make-dir \"./dist\" && strip-json-comments \"./source/index.json\" | jq --compact-output > \"./dist/index.json\"",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:prettier": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\" --write",
+		"format:syncpack": "syncpack format",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:format": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\"",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
+	},
+	"peerDependencies": {
+		"markdownlint-cli": "^0.32.2"
+	},
+	"devDependencies": {
+		"make-dir-cli": "^3.0.0",
+		"markdownlint": "^0.26.2",
+		"node-jq": "^2.3.3",
+		"strip-json-comments-cli": "^2.0.2"
+	}
+}

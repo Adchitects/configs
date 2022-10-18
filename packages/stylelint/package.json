@@ -1,0 +1,63 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"type": "commonjs",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@adchitects/stylelint-config",
+	"version": "0.0.0",
+	"description": "@adchitects extendable configuration for stylelint.",
+	"keywords": [
+		"config",
+		"linter",
+		"stylelint"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/adchitects/configs/tree/main/packages/stylelint",
+	"repository": "https://github.com/adchitects/configs/tree/main/packages/stylelint",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16"
+	},
+	"main": "dist/index.js",
+	"files": [
+		"/dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:prettier": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\" --write",
+		"format:syncpack": "syncpack format",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:format": "prettier --check \"./**/*\" --cache \"./node_modules/.cache/prettier\" --ignore-path \"../../.prettierignore\"",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
+		"lint:types": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"stylelint": "^14.13.0"
+	},
+	"dependencies": {
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-standard": "^28.0.0",
+		"stylelint-config-standard-scss": "^5.0.0",
+		"stylelint-high-performance-animation": "^1.6.0",
+		"stylelint-no-unsupported-browser-features": "^5.0.4",
+		"stylelint-order": "^5.0.0",
+		"stylelint-scss": "^4.3.0"
+	},
+	"devDependencies": {
+		"@adchitects/typescript-config": "workspace:*",
+		"@types/node": "^18.7.18",
+		"@workspace/shared": "workspace:*",
+		"stylelint": "^14.13.0",
+		"tsup": "^6.2.3",
+		"typescript": "^4.8.3"
+	}
+}

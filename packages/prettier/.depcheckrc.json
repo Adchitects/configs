@@ -1,0 +1,9 @@
+{
+	"ignores": [
+		"@adchitects/typescript-config",
+		"@prettier/*",
+        "@types/node",
+		"@workspace/shared",
+		"prettier-plugin-*"
+    ]
+}

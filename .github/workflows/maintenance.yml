@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+---
+name: Maintenance
+
+on:
+    schedule:
+        - cron: "0 9 */3 * *"
+    workflow_dispatch:
+
+permissions:
+    actions: read
+    contents: read
+    security-events: write
+
+jobs:
+    security_git-guardian:
+        name: Security
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/git-guardian.yml
+        uses: adchitects/.github/.github/workflows/git-guardian.yml@main
+        secrets:
+            GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
+
+    security_snyk:
+        name: Security
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/snyk.yml
+        uses: adchitects/.github/.github/workflows/snyk.yml@main
+        secrets:
+            SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

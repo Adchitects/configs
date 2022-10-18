@@ -1,0 +1,29 @@
+# https://github.com/actions/labeler
+---
+"🏗️ continuous integration":
+    - .github/**/*
+
+"📓 documentation":
+    - README.md
+    - packages/*/README.md
+
+"📦 package:eslint-config":
+    - packages/eslint/**/*
+
+"📦 package:markdownlint-config":
+    - packages/markdownlint/**/*
+
+"📦 package:prettier-config":
+    - packages/prettier/**/*
+
+"📦 package:stylelint-config":
+    - packages/stylelint/**/*
+
+"📦 package:syncpack-config":
+    - packages/syncpack/**/*
+
+"📦 package:typescript-config":
+    - packages/typescript/**/*
+
+"🎉 release":
+    - packages/*/CHANGELOG.md
