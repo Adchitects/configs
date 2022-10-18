@@ -1,5 +1,5 @@
 ---
-"@adchitects/syncpack-config": minor
+"@adchitects/stylelint-config": minor
 ---
 
 🎉 Initial configuration setup package

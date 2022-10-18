@@ -1,5 +1,5 @@
 ---
-"@adchitects/syncpack-config": minor
+"@adchitects/eslint-config": minor
 ---
 
 🎉 Initial configuration setup package

@@ -2,4 +2,4 @@
 "@adchitects/prettier-config": minor
 ---
 
-🎉 Initial config package
+🎉 Initial configuration setup package
