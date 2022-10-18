@@ -3,7 +3,5 @@
 
 # Prevent running lint-staged inside the continuous integration container
 if [ -z  "$CI" ] && [ -z "$CONTINUOUS_INTEGRATION" ]; then
-	# TODO: Enable it when is ready
-	echo "Lint staged will do the job there soon, when the repo is ready."
-	# pnpm lint-staged --verbose
+	pnpm lint-staged --verbose
 fi
