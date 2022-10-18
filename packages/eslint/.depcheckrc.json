@@ -1,7 +1,11 @@
 {
 	"ignores": [
-		"@adchitects/typescript-config",
+		"@terminal-nerds/typescript-config",
+		"@typescript-eslint/*",
+		"@types/eslint",
 		"@types/node",
-		"@workspace/shared"
-    ]
+		"eslint-config-*",
+		"eslint-plugin-*",
+		"*-eslint-parser"
+	]
 }
