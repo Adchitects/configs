@@ -2,7 +2,7 @@ import { defineConfig } from "eslint-define-config";
 
 // https://github.com/mysticatea/eslint-plugin-node
 const config = defineConfig({
-	extends: ["plugin:node/recommended"],
+	extends: ["plugin:node/recommended-script"],
 	rules: {
 		/**
 		 * RATIONALE:
