@@ -7,7 +7,7 @@
 	 * @see https://github.com/DavidAnson/markdownlint/blob/main/doc/Prettier.md
 	 */
 	"line-length": {
-		"line_length": 80,
+		"line_length": 120,
 		"stern": false,
 		"tables": false
 	},
