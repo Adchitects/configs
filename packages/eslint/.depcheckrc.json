@@ -1,6 +1,6 @@
 {
 	"ignores": [
-		"@terminal-nerds/typescript-config",
+		"@adchitects/typescript-config",
 		"@typescript-eslint/*",
 		"@types/eslint",
 		"@types/node",
