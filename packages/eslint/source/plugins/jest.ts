@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { getIgnorePatterns } from "@workspace/helpers/configuration";
+import { getIgnorePatterns } from "@workspace/shared/configuration";
 
 // https://github.com/jest-community/eslint-plugin-jest
 const config = defineConfig({
