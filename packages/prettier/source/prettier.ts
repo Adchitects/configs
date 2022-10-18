@@ -2,7 +2,8 @@ import type { Options } from "prettier";
 
 // @see https://prettier.io/docs/en/options.html
 const config: Options = {
-	printWidth: 80,
+	// TODO: Discuss internally with the @adchitects ASAP
+	printWidth: 120,
 
 	tabWidth: 4,
 	useTabs: true,
