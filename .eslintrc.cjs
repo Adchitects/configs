@@ -1,10 +1,10 @@
 const config = {
-	extends: "@adchitects/eslint-config",
+	extends: "@adchitects",
 
 	env: {
 		// Specify the environment(s)
 		// https://eslint.org/docs/user-guide/configuring/language-options#specifying-environments
-		browser: true,
+		browser: false,
 		node: true,
 	},
 };
