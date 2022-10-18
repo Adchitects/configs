@@ -68,7 +68,7 @@ importers:
       eslint-plugin-react-hooks: ^4.6.0
       eslint-plugin-regexp: ^1.9.0
       eslint-plugin-sonarjs: ^0.15.0
-      eslint-plugin-sql: ^2.2.1
+      eslint-plugin-sql: ^2.2.2
       eslint-plugin-storybook: ^0.6.4
       eslint-plugin-testing-library: ^5.7.0
       eslint-plugin-unicorn: ^43.0.2
@@ -96,7 +96,7 @@ importers:
       eslint-plugin-react-hooks: 4.6.0
       eslint-plugin-regexp: 1.9.0
       eslint-plugin-sonarjs: 0.15.0
-      eslint-plugin-sql: 2.2.1
+      eslint-plugin-sql: 2.2.2
       eslint-plugin-storybook: 0.6.4_typescript@4.8.3
       eslint-plugin-testing-library: 5.7.0_typescript@4.8.3
       eslint-plugin-unicorn: 43.0.2
@@ -2693,8 +2693,8 @@ packages:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dev: false
 
-  /eslint-plugin-sql/2.2.1:
-    resolution: {integrity: sha512-e5BaUYZfl3xd6428KW5De/dofhAnitdI3Zu4matpRSg5+swDpAWHKfwLI4rltWmL/XuyB6+LnfvGSjyPf1E62w==}
+  /eslint-plugin-sql/2.2.2:
+    resolution: {integrity: sha512-/nJYiR6snbcfeE4vGdfQJqfSROS47FB2+c9OkB2cubSt7mwepMgtJNn6y2qQfWiQI8MrxsT2+HoyAiunzhGVzA==}
     engines: {node: '>=12'}
     peerDependencies:
       eslint: '>=8.1.0'
