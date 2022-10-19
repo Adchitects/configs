@@ -14,14 +14,14 @@ importers:
       browserslist: 4.21.4
       concurrently: 7.4.0
       del-cli: 5.0.0
-      depcheck: ^1.4.3
-      eslint: ^8.24.0
+      depcheck: 1.4.3
+      eslint: 8.25.0
       husky: 8.0.1
       lint-staged: 13.0.3
-      markdownlint-cli: ^0.32.2
-      syncpack: ^8.2.4
+      markdownlint-cli: 0.32.2
+      syncpack: 8.2.4
       turbo: 1.5.6
-      typescript: ^4.8.3
+      typescript: 4.8.4
     devDependencies:
       '@adchitects/eslint-config': link:packages/eslint
       '@adchitects/markdownlint-config': link:packages/markdownlint
@@ -46,7 +46,7 @@ importers:
     specifiers:
       '@adchitects/typescript-config': workspace:*
       '@rushstack/eslint-patch': ^1.2.0
-      '@types/eslint': ^8.4.6
+      '@types/eslint': 8.4.6
       '@types/node': 18.11.2
       '@typescript-eslint/eslint-plugin': ^5.38.1
       '@typescript-eslint/parser': ^5.38.1
@@ -74,7 +74,7 @@ importers:
       eslint-plugin-unicorn: ^43.0.2
       eslint-plugin-yml: ^1.2.0
       tsup: 6.3.0
-      typescript: ^4.8.3
+      typescript: 4.8.4
     dependencies:
       '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/eslint-plugin': 5.40.1_a2bzktwtwlvfrskzzpbzbwea4y
@@ -111,10 +111,10 @@ importers:
 
   packages/markdownlint:
     specifiers:
-      make-dir-cli: ^3.0.0
-      markdownlint: ^0.26.2
+      make-dir-cli: 3.0.0
+      markdownlint: 0.26.2
       node-jq: 2.3.4
-      strip-json-comments-cli: ^2.0.2
+      strip-json-comments-cli: 2.0.2
     devDependencies:
       make-dir-cli: 3.0.0
       markdownlint: 0.26.2
@@ -126,10 +126,10 @@ importers:
       '@adchitects/typescript-config': workspace:*
       '@prettier/plugin-php': ^0.19.1
       '@types/node': 18.11.2
-      '@types/prettier': ^2.7.0
+      '@types/prettier': 2.7.1
       '@workspace/shared': workspace:*
       tsup: 6.3.0
-      typescript: ^4.8.3
+      typescript: 4.8.4
     dependencies:
       '@prettier/plugin-php': 0.19.1
     devDependencies:
@@ -145,7 +145,7 @@ importers:
       '@adchitects/typescript-config': workspace:*
       '@types/node': 18.11.2
       '@workspace/shared': workspace:*
-      stylelint: ^14.13.0
+      stylelint: 14.14.0
       stylelint-config-prettier: ^9.0.3
       stylelint-config-standard: ^28.0.0
       stylelint-config-standard-scss: ^5.0.0
@@ -154,7 +154,7 @@ importers:
       stylelint-order: ^5.0.0
       stylelint-scss: ^4.3.0
       tsup: 6.3.0
-      typescript: ^4.8.3
+      typescript: 4.8.4
     dependencies:
       stylelint-config-prettier: 9.0.3_stylelint@14.14.0
       stylelint-config-standard: 28.0.0_stylelint@14.14.0
@@ -176,9 +176,9 @@ importers:
       '@adchitects/typescript-config': workspace:*
       '@types/node': 18.11.2
       '@workspace/shared': workspace:*
-      syncpack: ^8.2.4
+      syncpack: 8.2.4
       tsup: 6.3.0
-      typescript: ^4.8.3
+      typescript: 4.8.4
     devDependencies:
       '@adchitects/typescript-config': link:../typescript
       '@types/node': 18.11.2
@@ -189,10 +189,10 @@ importers:
 
   packages/typescript:
     specifiers:
-      make-dir-cli: ^3.0.0
+      make-dir-cli: 3.0.0
       node-jq: 2.3.4
-      strip-json-comments-cli: ^2.0.2
-      typescript: ^4.8.3
+      strip-json-comments-cli: 2.0.2
+      typescript: 4.8.4
     devDependencies:
       make-dir-cli: 3.0.0
       node-jq: 2.3.4
@@ -203,11 +203,11 @@ importers:
     specifiers:
       '@adchitects/typescript-config': workspace:*
       '@types/node': 18.11.2
-      deepmerge-ts: ^4.2.1
-      read-pkg-up: ^9.1.0
+      deepmerge-ts: 4.2.2
+      read-pkg-up: 9.1.0
       tsup: 6.3.0
-      type-fest: ^2.19.0
-      typescript: ^4.8.3
+      type-fest: 2.19.0
+      typescript: 4.8.4
     dependencies:
       deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
@@ -996,7 +996,7 @@ packages:
   /@vue/compiler-sfc/3.2.41:
     resolution: {integrity: sha512-+1P2m5kxOeaxVmJNXnBskAn3BenbTmbxBxWOtBq3mQTCokIreuMULFantBUclP0+KnzNCMOvcnKinqQZmiOF8w==}
     dependencies:
-      '@babel/parser': 7.16.4
+      '@babel/parser': 7.19.4
       '@vue/compiler-core': 3.2.41
       '@vue/compiler-dom': 3.2.41
       '@vue/compiler-ssr': 3.2.41
