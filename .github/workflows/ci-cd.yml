@@ -93,9 +93,9 @@ jobs:
             step-name: Execute "pretty-quick" CLI task
             # https://github.com/azz/pretty-quick#usage
             run: >
-                pnpm pretty-quick
-                --branch HEAD~${{ github.event.pull_request.commits }}
-                --verbose
+                pnpm prettier .
+                --cache
+                --check
 
     lint_syncpack:
         # Analyze the package.json files to find dependencies mismatches
