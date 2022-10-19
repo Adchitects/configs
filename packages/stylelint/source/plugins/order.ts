@@ -178,7 +178,7 @@ const config: Partial<Config> = {
 			"backface-visibility",
 			"will-change",
 			"visibility",
-			"opacity"
+			"opacity",
 		],
 	},
 };

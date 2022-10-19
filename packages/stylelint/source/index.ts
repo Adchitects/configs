@@ -18,7 +18,7 @@ const mergedConfig = createMergedConfig([
 
 	// Plugins
 	pluginHighPerformanceAnimation,
-    pluginNoUnsupportedBrowserFeatures,
+	pluginNoUnsupportedBrowserFeatures,
 	pluginOrder,
 	hasModule("sass") && pluginSCSS,
 

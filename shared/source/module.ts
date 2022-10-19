@@ -48,4 +48,3 @@ export function isCommonJS() {
 
 	return type === "commonjs";
 }
-

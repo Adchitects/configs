@@ -10,7 +10,7 @@ const mergedConfig = createMergedConfig([
 	prettier,
 
 	// Plugins
-    hasKeywords(["php", "adchitects-php-project"]) && phpPlugin,
+	hasKeywords(["php", "adchitects-php-project"]) && phpPlugin,
 ]);
 
 // eslint-disable-next-line unicorn/prefer-module

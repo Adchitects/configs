@@ -61,18 +61,18 @@ const config: Partial<Config> = {
 		"media-feature-range-operator-space-after": "always",
 		"no-descending-specificity": undefined,
 		"no-eol-whitespace": undefined,
-		"rule-empty-line-before": ["always", {
-			"ignore": ["after-comment", "first-nested"]
-		}],
+		"rule-empty-line-before": [
+			"always",
+			{
+				ignore: ["after-comment", "first-nested"],
+			},
+		],
 		"selector-combinator-space-after": "always",
 		/**
 		 * @see: https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown
 		 * RATIONALE: Allow using CSS Modules
 		 */
-		"selector-pseudo-class-no-unknown": [
-			true,
-			{ ignorePseudoClasses: ["local", "global"] },
-		],
+		"selector-pseudo-class-no-unknown": [true, { ignorePseudoClasses: ["local", "global"] }],
 		"selector-pseudo-class-parentheses-space-inside": "never",
 		"selector-pseudo-element-colon-notation": "double",
 	},
