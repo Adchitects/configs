@@ -49,56 +49,53 @@ jobs:
             step-name: Execute package.json script
             run: pnpm deps:check
 
-    # TODO: Configure it when the ESLint config is ready
-    # lint_eslint:
-    #     # Analyze the JavaScript codebase
-    #     name: Lint / ESLint
-    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
-    #     uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
-    #     needs: [build]
-    #     with:
-    #         download-build: true
-    #         step-name: Execute ESLint CLI task
-    #         # https://eslint.org/docs/user-guide/command-line-interface
-    #         run: >
-    #             DEBUG="eslint:cli-engine"
-    #             pnpm eslint .
-    #             --cache
-    #             --cache-location "./node_modules/.cache/eslint"
-    #             --ext .cjs,.js,.json,.ts,.yaml,.yml
+    lint_eslint:
+        # Analyze the JavaScript codebase
+        name: Lint / ESLint
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
+        uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
+        needs: [build]
+        with:
+            download-build: true
+            step-name: Execute ESLint CLI task
+            # https://eslint.org/docs/user-guide/command-line-interface
+            run: >
+                DEBUG="eslint:cli-engine"
+                pnpm eslint .
+                --cache
+                --cache-location "./node_modules/.cache/eslint"
+                --ext .cjs,.js,.json,.ts,.yaml,.yml
 
-    # TODO: Configure it when the markdownLint config is ready
-    # lint_markdownlint:
-    #     # Analyze the markdownlint files
-    #     name: Lint / markdownlint
-    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
-    #     uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
-    #     needs: [build]
-    #     with:
-    #         download-build: true
-    #         step-name: Execute markdownlint CLI task
-    #         # https://github.com/igorshubovych/markdownlint-cli#usage
-    #         run: >
-    #             pnpm markdownlint .
-    #             --dot
-    #             --ignore "./.changeset/*.md"
-    #             --ignore-path ".gitignore"
+    lint_markdownlint:
+        # Analyze the markdownlint files
+        name: Lint / markdownlint
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
+        uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
+        needs: [build]
+        with:
+            download-build: true
+            step-name: Execute markdownlint CLI task
+            # https://github.com/igorshubovych/markdownlint-cli#usage
+            run: >
+                pnpm markdownlint .
+                --dot
+                --ignore "./.changeset/*.md"
+                --ignore-path ".gitignore"
 
-    # TODO: Configure it when the PrettierLint config is ready
-    # lint_prettier:
-    #     # Analyze the code format style
-    #     name: Lint / Prettier
-    #     # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
-    #     uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
-    #     needs: [build]
-    #     with:
-    #         download-build: true
-    #         step-name: Execute "pretty-quick" CLI task
-    #         # https://github.com/azz/pretty-quick#usage
-    #         run: >
-    #             pnpm pretty-quick
-    #             --branch HEAD~${{ github.event.pull_request.commits }}
-    #             --verbose
+    lint_prettier:
+        # Analyze the code format style
+        name: Lint / Prettier
+        # https://github.com/adchitects/.github/blob/main/.github/workflows/nodejs-job.yml
+        uses: adchitects/.github/.github/workflows/nodejs-job.yml@main
+        needs: [build]
+        with:
+            download-build: true
+            step-name: Execute "pretty-quick" CLI task
+            # https://github.com/azz/pretty-quick#usage
+            run: >
+                pnpm prettier .
+                --cache
+                --check
 
     lint_syncpack:
         # Analyze the package.json files to find dependencies mismatches
@@ -131,13 +128,13 @@ jobs:
         name: Release
         # https://github.com/adchitects/.github/blob/main/.github/workflows/changesets.yml
         uses: adchitects/.github/.github/workflows/changesets.yml@main
-        needs: [
+        needs:
+            [
                 build,
                 lint_depcheck,
-                # TODO: Enable when they're ready
-                # lint_eslint,
-                # lint_markdownlint,
-                # lint_prettier,
+                lint_eslint,
+                lint_markdownlint,
+                lint_prettier,
                 lint_syncpack,
                 security_git-guardian,
                 security_snyk,
