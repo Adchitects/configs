@@ -41,7 +41,7 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"syncpack": "^8.2.4"
+		"syncpack": "8.2.4"
 	},
 	"devDependencies": {
 		"@adchitects/typescript-config": "workspace:*",
