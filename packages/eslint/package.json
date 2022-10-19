@@ -41,7 +41,7 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"eslint": "^8.24.0"
+		"eslint": "8.24.0"
 	},
 	"dependencies": {
 		"@rushstack/eslint-patch": "1.2.0",
