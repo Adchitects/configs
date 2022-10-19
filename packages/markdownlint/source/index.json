@@ -30,7 +30,7 @@
 	},
 	/*
 	 * RATIONALE:
-     * There's nothing wrong with them, sometimes we have to be creative or add custom components with MDX or similar
+	 * There's nothing wrong with them, sometimes we have to be creative or add custom components with MDX or similar
 	 * for every list level. And markdownlint option is for *all* levels.
 	 */
 	"no-inline-html": false,

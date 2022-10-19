@@ -1,9 +1,3 @@
 {
-	"ignores": [
-		"@adchitects/typescript-config",
-		"@prettier/*",
-        "@types/node",
-		"@workspace/shared",
-		"prettier-plugin-*"
-    ]
+	"ignores": ["@adchitects/typescript-config", "@prettier/*", "@types/node", "@workspace/shared", "prettier-plugin-*"]
 }

@@ -17,7 +17,6 @@
 [@terminal-nerds/config]: https://github.com/terminal-nerds/config
 [@xeho91]: https://github.com/xeho91
 [@adchitects]: https://github.com/adchitects
-
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [pnpm workspace]: https://pnpm.io/workspaces
 [pnpm workspace badge]: https://img.shields.io/badge/-pnpm%20workspace-informational?style=for-the-badge&logo=pnpm

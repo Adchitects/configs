@@ -2,12 +2,12 @@
 	"ignore-bin-package": false,
 	"ignores": [
 		"@adchitects/*",
-        "@changesets/*",
-        "browserslist",
+		"@changesets/*",
+		"browserslist",
 		"concurrently",
 		"depcheck",
-        "lint-staged",
-        "typescript"
+		"lint-staged",
+		"typescript"
 	],
 	"skip-missing": false
 }
