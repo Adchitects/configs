@@ -47,7 +47,7 @@ importers:
       '@adchitects/typescript-config': workspace:*
       '@rushstack/eslint-patch': ^1.2.0
       '@types/eslint': ^8.4.6
-      '@types/node': ^18.7.18
+      '@types/node': 18.11.2
       '@typescript-eslint/eslint-plugin': ^5.38.1
       '@typescript-eslint/parser': ^5.38.1
       '@workspace/shared': workspace:*
@@ -125,7 +125,7 @@ importers:
     specifiers:
       '@adchitects/typescript-config': workspace:*
       '@prettier/plugin-php': ^0.19.1
-      '@types/node': ^18.7.18
+      '@types/node': 18.11.2
       '@types/prettier': ^2.7.0
       '@workspace/shared': workspace:*
       tsup: ^6.2.3
@@ -143,7 +143,7 @@ importers:
   packages/stylelint:
     specifiers:
       '@adchitects/typescript-config': workspace:*
-      '@types/node': ^18.7.18
+      '@types/node': 18.11.2
       '@workspace/shared': workspace:*
       stylelint: ^14.13.0
       stylelint-config-prettier: ^9.0.3
@@ -174,7 +174,7 @@ importers:
   packages/syncpack:
     specifiers:
       '@adchitects/typescript-config': workspace:*
-      '@types/node': ^18.7.18
+      '@types/node': 18.11.2
       '@workspace/shared': workspace:*
       syncpack: ^8.2.4
       tsup: ^6.2.3
@@ -202,7 +202,7 @@ importers:
   shared:
     specifiers:
       '@adchitects/typescript-config': workspace:*
-      '@types/node': ^18.7.18
+      '@types/node': 18.11.2
       deepmerge-ts: ^4.2.1
       read-pkg-up: ^9.1.0
       tsup: ^6.2.3
