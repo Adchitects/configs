@@ -37,6 +37,9 @@
 		"lint:format": "prettier --check \"./**/*\" --ignore-path \"../../.prettierignore\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
 	},
+	"peerDependencies": {
+		"typescript": "4.8.4"
+	},
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
 		"node-jq": "2.3.4",
