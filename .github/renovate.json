@@ -7,7 +7,6 @@
 			"addLabels": ["🧰 monorepo"],
 			"packagePatterns": [
 				"all-contributors-cli",
-				"browserslist",
 				"changesets",
 				"concurrently",
 				"del-cli",
@@ -23,6 +22,13 @@
 			"addLabels": ["🧰 monorepo"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
 			"packagePatterns": ["deepmerge", "pkg-up", "read-pkg-up", "type-fest"]
+		},
+		{
+			"groupName": "browserslist dependencies",
+			"addLabels": ["📦 package:browserslist-config"],
+			"matchPackageNames": ["browserslist"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"packagePatterns": ["browserslist"]
 		},
 		{
 			"groupName": "ESLint dependencies",
