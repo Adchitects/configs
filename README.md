@@ -43,8 +43,10 @@ plugins dependencies, etc.
 ![node.js version support badge]
 [![Dependencies badge]][dependencies url]
 
-[codeclimate issues badge]: https://img.shields.io/codeclimate/issues/adchitects/configs?logo=codeclimate&style=for-the-badge
-[codeclimate report]: https://codeclimate.com/github/adchitects/configs
+<!-- TODO: Rename `Adchitects` to `adchitects` (lower-case) for consistency -->
+
+[codeclimate issues badge]: https://img.shields.io/codeclimate/issues/Adchitects/configs?logo=codeclimate&style=for-the-badge
+[codeclimate report]: https://codeclimate.com/github/Adchitects/configs
 [node.js version support badge]: https://img.shields.io/node/v-lts/@adchitects/eslint-config?style=for-the-badge&logo=nodedotjs
 [dependencies badge]: https://img.shields.io/librariesio/github/adchitects/configs?style=for-the-badge
 [dependencies url]: https://libraries.io/github/adchitects/configs "Dependencies status"
