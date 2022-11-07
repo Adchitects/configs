@@ -1,8 +1,43 @@
-// https://github.com/okonet/lint-staged
+import { readFileSync } from "node:fs";
 
+const PRETTIER_IGNORE_LIST = readFileSync(new URL(".prettierignore", import.meta.url))
+	.toString()
+	.split("\n");
+
+/**
+ * @param path {string}
+ */
+function isOnPrettierIgnoreList(path) {
+	for (const ignorePath of PRETTIER_IGNORE_LIST) {
+		if (path.includes(ignorePath)) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+/**
+ * @param paths {Array<string>}
+ */
+function executePrettierOnFiles(paths) {
+	const filesToCheck = [];
+
+	for (const path of paths) {
+		if (!isOnPrettierIgnoreList(path)) {
+			filesToCheck.push(path);
+		}
+	}
+
+	return filesToCheck.length > 0
+		? [`prettier --check ${filesToCheck.map((path) => '"' + path + '"'.join(" "))}`]
+		: [];
+}
+
+// https://github.com/okonet/lint-staged
 const config = {
 	// Prettier
-	"*": (files) => [`prettier --check ${files.map((path) => '"' + path + '"').join(" ")}`],
+	"*": (files) => executePrettierOnFiles(files),
 
 	// ESLint
 	"*.{js,json,ts,yml,yaml}": ["eslint"],
