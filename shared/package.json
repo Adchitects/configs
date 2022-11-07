@@ -41,8 +41,8 @@
 	},
 	"devDependencies": {
 		"@adchitects/typescript-config": "workspace:*",
-		"@types/node": "18.11.2",
-		"tsup": "6.3.0",
+		"@types/node": "18.11.9",
+		"tsup": "6.4.0",
 		"typescript": "4.8.4"
 	}
 }

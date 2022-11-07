@@ -6,7 +6,7 @@
 		"access": "public"
 	},
 	"name": "@adchitects/prettier-config",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "@adchitects extendable configuration for prettier.",
 	"keywords": [
 		"config",
@@ -48,10 +48,10 @@
 	},
 	"devDependencies": {
 		"@adchitects/typescript-config": "workspace:*",
-		"@types/node": "18.11.2",
+		"@types/node": "18.11.9",
 		"@types/prettier": "2.7.1",
 		"@workspace/shared": "workspace:*",
-		"tsup": "6.3.0",
+		"tsup": "6.4.0",
 		"typescript": "4.8.4"
 	}
 }

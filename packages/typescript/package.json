@@ -6,7 +6,7 @@
 		"access": "public"
 	},
 	"name": "@adchitects/typescript-config",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "@adchitects extendable configuration for TypeScript.",
 	"keywords": [
 		"config",
@@ -36,6 +36,9 @@
 		"lint:deps": "depcheck",
 		"lint:format": "prettier --check \"./**/*\" --ignore-path \"../../.prettierignore\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
+	},
+	"peerDependencies": {
+		"typescript": "4.8.4"
 	},
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
