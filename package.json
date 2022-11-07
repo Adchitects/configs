@@ -35,6 +35,7 @@
 		"prepare": "husky install"
 	},
 	"devDependencies": {
+		"@adchitects/browserslist-config": "workspace:*",
 		"@adchitects/eslint-config": "workspace:*",
 		"@adchitects/markdownlint-config": "workspace:*",
 		"@adchitects/prettier-config": "workspace:*",
