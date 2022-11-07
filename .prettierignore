@@ -1,4 +1,5 @@
 .husky/
 .turbo/
 dist/
+.browserslistrc
 pnpm-lock.yaml
