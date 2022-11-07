@@ -54,7 +54,7 @@
 	},
 	"devDependencies": {
 		"@adchitects/typescript-config": "workspace:*",
-		"@types/node": "18.11.2",
+		"@types/node": "18.11.9",
 		"@workspace/shared": "workspace:*",
 		"stylelint": "14.14.0",
 		"tsup": "6.3.0",
