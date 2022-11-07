@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"type": "module",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@adchitects/browserslist-config",
+	"version": "0.1.0",
+	"description": "@adchitects extendable configuration for browserslist.",
+	"keywords": [
+		"config",
+		"tool",
+		"browserslist"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/adchitects/configs/tree/main/packages/browserslist",
+	"repository": "https://github.com/adchitects/configs/tree/main/packages/browserslist",
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=16"
+	},
+	"main": "browserslistrc",
+	"scripts": {
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:prettier": "prettier --check \"./**/*\" --ignore-path \"../../.prettierignore\" --write",
+		"format:syncpack": "syncpack format",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:format": "prettier --check \"./**/*\" --ignore-path \"../../.prettierignore\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
+	},
+	"peerDependencies": {
+		"browserslist": "4.21.4"
+	},
+	"devDependencies": {
+		"browserslist": "4.21.4"
+	}
+}

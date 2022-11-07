@@ -42,6 +42,12 @@ importers:
       turbo: 1.6.3
       typescript: 4.8.4
 
+  packages/browserslist:
+    specifiers:
+      browserslist: 4.21.4
+    devDependencies:
+      browserslist: 4.21.4
+
   packages/eslint:
     specifiers:
       '@adchitects/typescript-config': workspace:*
