@@ -58,6 +58,7 @@ device(s):
 1. **Extend this module package configuration.**
 
     ```txt
+    # https://browsersl.ist/
     extends @adchitects/browserslist-config
     ```
 
