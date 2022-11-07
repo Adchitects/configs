@@ -41,13 +41,13 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"syncpack": "8.2.4"
+		"syncpack": "8.3.9"
 	},
 	"devDependencies": {
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "18.11.9",
 		"@workspace/shared": "workspace:*",
-		"syncpack": "8.2.4",
+		"syncpack": "8.3.9",
 		"tsup": "6.4.0",
 		"typescript": "4.8.4"
 	}
