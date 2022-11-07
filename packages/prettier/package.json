@@ -44,7 +44,7 @@
 		"prettier": "2.7.1"
 	},
 	"dependencies": {
-		"@prettier/plugin-php": "0.19.1"
+		"@prettier/plugin-php": "0.19.2"
 	},
 	"devDependencies": {
 		"@adchitects/typescript-config": "workspace:*",
