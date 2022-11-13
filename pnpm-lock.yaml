@@ -62,9 +62,8 @@ importers:
 
   packages/eslint:
     specifiers:
-      '@adchitects/tsup-config': workspace:*
       '@adchitects/typescript-config': workspace:*
-      '@emotion/eslint-plugin': ^11.10.0
+      '@rushstack/eslint-patch': 1.2.0
       '@types/eslint': 8.4.6
       '@types/node': 18.11.9
       '@typescript-eslint/eslint-plugin': 5.40.1
@@ -95,7 +94,7 @@ importers:
       tsup: 6.4.0
       typescript: 4.8.4
     dependencies:
-      '@emotion/eslint-plugin': 11.10.0
+      '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/eslint-plugin': 5.40.1_a2bzktwtwlvfrskzzpbzbwea4y
       '@typescript-eslint/parser': 5.40.1_typescript@4.8.4
       eslint-config-next: 12.3.1_typescript@4.8.4
@@ -121,7 +120,6 @@ importers:
       eslint-plugin-unicorn: 43.0.2
       eslint-plugin-yml: 1.2.0
     devDependencies:
-      '@adchitects/tsup-config': link:../tsup
       '@adchitects/typescript-config': link:../typescript
       '@types/eslint': 8.4.6
       '@types/node': 18.11.9
@@ -586,13 +584,6 @@ packages:
     dependencies:
       postcss: 8.4.18
       postcss-selector-parser: 6.0.10
-
-  /@emotion/eslint-plugin/11.10.0:
-    resolution: {integrity: sha512-nWpuoQQrzI9aM9fgn+Pbb0pOau4BhheXyVqHcOYKFq46uSuSR2ivZaDwwCJKI6ScA8Pm7OcoOpwdRH2iisf9cg==}
-    engines: {node: '>=6'}
-    peerDependencies:
-      eslint: 6 || 7 || 8
-    dev: false
 
   /@esbuild/android-arm/0.15.11:
     resolution: {integrity: sha512-PzMcQLazLBkwDEkrNPi9AbjFt6+3I7HKbiYF2XtWQ7wItrHvEOeO3T8Am434zAozWtVP7lrTue1bEfc2nYWeCA==}
