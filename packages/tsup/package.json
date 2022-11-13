@@ -1,29 +1,40 @@
 {
 	"$schema": "https://json.schemastore.org/package",
-	"type": "commonjs",
+	"type": "module",
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org/",
 		"access": "public"
 	},
-	"name": "@adchitects/prettier-config",
+	"name": "@adchitects/tsup-config",
 	"version": "0.1.0",
-	"description": "@adchitects extendable configuration for prettier.",
+	"description": "@adchitects extendable configuration for tsup.",
 	"keywords": [
 		"config",
-		"formatter",
-		"prettier"
+		"tsup",
+		"tools"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/adchitects/configs/tree/main/packages/prettier",
-	"repository": "https://github.com/adchitects/configs/tree/main/packages/prettier",
+	"homepage": "https://github.com/adchitects/configs",
+	"repository": {
+		"directory": "packages/tsup",
+		"type": "git",
+		"url": "https://github.com/adchitects/configs"
+	},
 	"bugs": "https://github.com/adchitects/configs/issues",
 	"engines": {
 		"node": ">=18"
 	},
-	"main": "dist/index.js",
+	"main": "dist/index.cjs",
 	"files": [
-		"/dist"
+		"dist/"
 	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs",
+			"types": "./dist/index.d.ts"
+		}
+	},
 	"scripts": {
 		"build": "tsup",
 		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
@@ -36,23 +47,18 @@
 		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
 		"lint:deps": "depcheck",
 		"lint:format": "prettier --check \"./**/*\" --ignore-path \"../../.prettierignore\"",
-		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --config \"../../.eslintrc.cjs\" --cache --cache-location \"./node_modules/.cache/eslint\"",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/tsup\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"prettier": "2.7.1"
-	},
-	"dependencies": {
-		"@prettier/plugin-php": "0.19.2"
+		"tsup": "6.4.0"
 	},
 	"devDependencies": {
-		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "18.11.9",
-		"@types/prettier": "2.7.1",
-		"@workspace/shared": "workspace:*",
 		"tsup": "6.4.0",
 		"typescript": "4.8.4"
-	}
+	},
+	"types": "dist/index.d.ts"
 }

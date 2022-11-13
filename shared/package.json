@@ -5,12 +5,27 @@
 	"name": "@workspace/shared",
 	"version": "0.0.0",
 	"engines": {
-		"node": ">=16"
+		"node": ">=18"
 	},
+	"files": [
+		"dist/"
+	],
 	"exports": {
-		"./configuration": "./dist/configuration.js",
-		"./environment": "./dist/environment.js",
-		"./module": "./dist/module.js"
+		"./configuration": {
+			"import": "./dist/configuration.js",
+			"require": "./dist/configuration.cjs",
+			"types": "./dist/configuration.d.ts"
+		},
+		"./environment": {
+			"import": "./dist/environment.js",
+			"require": "./dist/environment.cjs",
+			"types": "./dist/environment.d.ts"
+		},
+		"./module": {
+			"import": "./dist/module.js",
+			"require": "./dist/module.cjs",
+			"types": "./dist/module.d.ts"
+		}
 	},
 	"typesVersions": {
 		"*": {
@@ -41,9 +56,9 @@
 	},
 	"devDependencies": {
 		"@adchitects/typescript-config": "workspace:*",
+		"@adchitects/tsup-config": "workspace:*",
 		"@types/node": "18.11.9",
-		"tsup": "6.3.0",
-		"type-fest": "2.19.0",
+		"tsup": "6.4.0",
 		"typescript": "4.8.4"
 	}
 }

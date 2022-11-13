@@ -7,6 +7,9 @@
     - README.md
     - packages/*/README.md
 
+"📦 package:browserslist-config":
+    - packages/browserslist/**/*
+
 "📦 package:eslint-config":
     - packages/eslint/**/*
 
@@ -21,6 +24,9 @@
 
 "📦 package:syncpack-config":
     - packages/syncpack/**/*
+
+"📦 package:tsup-config":
+    - packages/tsup/**/*
 
 "📦 package:typescript-config":
     - packages/typescript/**/*

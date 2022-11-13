@@ -5,17 +5,17 @@
 		"registry": "https://registry.npmjs.org/",
 		"access": "public"
 	},
-	"name": "@adchitects/prettier-config",
+	"name": "@adchitects/browserslist-config",
 	"version": "0.1.0",
-	"description": "@adchitects extendable configuration for prettier.",
+	"description": "@adchitects extendable configuration for browserslist.",
 	"keywords": [
 		"config",
-		"formatter",
-		"prettier"
+		"tool",
+		"browserslist"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/adchitects/configs/tree/main/packages/prettier",
-	"repository": "https://github.com/adchitects/configs/tree/main/packages/prettier",
+	"homepage": "https://github.com/adchitects/configs/tree/main/packages/browserslist",
+	"repository": "https://github.com/adchitects/configs/tree/main/packages/browserslist",
 	"bugs": "https://github.com/adchitects/configs/issues",
 	"engines": {
 		"node": ">=18"
@@ -41,17 +41,13 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"prettier": "2.7.1"
-	},
-	"dependencies": {
-		"@prettier/plugin-php": "0.19.2"
+		"browserslist": "4.21.4"
 	},
 	"devDependencies": {
 		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "18.11.9",
-		"@types/prettier": "2.7.1",
-		"@workspace/shared": "workspace:*",
+		"browserslist": "4.21.4",
 		"tsup": "6.4.0",
 		"typescript": "4.8.4"
 	}

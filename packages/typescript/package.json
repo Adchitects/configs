@@ -18,7 +18,7 @@
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/typescript",
 	"bugs": "https://github.com/adchitects/configs/issues",
 	"engines": {
-		"node": ">=16"
+		"node": ">=18"
 	},
 	"main": "tsconfig.json",
 	"files": [
@@ -36,6 +36,9 @@
 		"lint:deps": "depcheck",
 		"lint:format": "prettier --check \"./**/*\" --ignore-path \"../../.prettierignore\"",
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
+	},
+	"peerDependencies": {
+		"typescript": "4.8.4"
 	},
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
