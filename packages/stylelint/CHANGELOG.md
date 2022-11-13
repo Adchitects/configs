@@ -4,4 +4,4 @@
 
 ### Minor Changes
 
--   [#12](https://github.com/Adchitects/configs/pull/12) [`4461be6`](https://github.com/Adchitects/configs/commit/4461be6ae10db82835b8448b406fc4d23aaf038a) Thanks [@xeho91](https://github.com/xeho91)! - 🎉 Initial configuration setup package
+-   [#12](https://github.com/Adchitects/configs/pull/12) [`4461be6`](https://github.com/Adchitects/configs/commit/4461be6ae10db82835b8448b406fc4d23aaf038a) Thanks [@xeho91](https://github.com/xeho91) & [acwo](https://github.com/acwo)! - 🎉 Initial configuration setup package

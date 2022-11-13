@@ -1,7 +1,6 @@
-import { readPackageUpSync } from "read-pkg-up";
-import type { PackageJson } from "type-fest";
+import { type NormalizedPackageJson, readPackageUpSync } from "read-pkg-up";
 
-export function readPackageJSON(): PackageJson {
+export function readPackageJSON(): NormalizedPackageJson {
 	const file = readPackageUpSync();
 
 	if (file) {

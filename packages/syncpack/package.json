@@ -18,7 +18,7 @@
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/syncpack",
 	"bugs": "https://github.com/adchitects/configs/issues",
 	"engines": {
-		"node": ">=16"
+		"node": ">=18"
 	},
 	"main": "dist/index.js",
 	"files": [
@@ -41,14 +41,15 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"syncpack": "8.2.4"
+		"syncpack": "8.3.9"
 	},
 	"devDependencies": {
+		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
-		"@types/node": "18.11.2",
+		"@types/node": "18.11.9",
 		"@workspace/shared": "workspace:*",
-		"syncpack": "8.2.4",
-		"tsup": "6.3.0",
+		"syncpack": "8.3.9",
+		"tsup": "6.4.0",
 		"typescript": "4.8.4"
 	}
 }

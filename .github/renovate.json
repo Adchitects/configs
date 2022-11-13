@@ -7,14 +7,12 @@
 			"addLabels": ["🧰 monorepo"],
 			"packagePatterns": [
 				"all-contributors-cli",
-				"browserslist",
 				"changesets",
 				"concurrently",
 				"del-cli",
 				"husky",
 				"lint-staged",
 				"node-jq",
-				"tsup",
 				"turbo"
 			]
 		},
@@ -23,6 +21,13 @@
 			"addLabels": ["🧰 monorepo"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
 			"packagePatterns": ["deepmerge", "pkg-up", "read-pkg-up", "type-fest"]
+		},
+		{
+			"groupName": "browserslist dependencies",
+			"addLabels": ["📦 package:browserslist-config"],
+			"matchPackageNames": ["browserslist"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
+			"packagePatterns": ["browserslist"]
 		},
 		{
 			"groupName": "ESLint dependencies",
@@ -59,6 +64,12 @@
 			"addLabels": ["📦 package:syncpack-config"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
 			"packagePatterns": ["syncpack"]
+		},
+		{
+			"groupName": "tsup dependencies",
+			"addLabels": ["📦 package:tsup-config"],
+			"matchPackageNames": ["tsup"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"]
 		},
 		{
 			"groupName": "TypeScript dependencies",
