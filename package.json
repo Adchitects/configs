@@ -48,7 +48,7 @@
 		"del-cli": "5.0.0",
 		"depcheck": "1.4.3",
 		"eslint": "8.26.0",
-		"husky": "8.0.1",
+		"husky": "8.0.2",
 		"lint-staged": "13.0.3",
 		"markdownlint-cli": "0.32.2",
 		"syncpack": "8.3.9",
