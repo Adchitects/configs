@@ -71,6 +71,7 @@
 		"eslint-plugin-yml": "1.2.0"
 	},
 	"devDependencies": {
+		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/eslint": "8.4.6",
 		"@types/node": "18.11.9",
