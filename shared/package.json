@@ -5,7 +5,7 @@
 	"name": "@workspace/shared",
 	"version": "0.0.0",
 	"engines": {
-		"node": ">=16"
+		"node": ">=18"
 	},
 	"exports": {
 		"./configuration": "./dist/configuration.js",
