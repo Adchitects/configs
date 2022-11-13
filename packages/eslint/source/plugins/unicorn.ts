@@ -1,5 +1,20 @@
 import { defineConfig } from "eslint-define-config";
 
+const ALLOWED_ABBREVATIONS = [
+	/**
+	 * RATIONALE:
+	 * This is descriptive & obvious enough.
+	 */
+	"props",
+	"Props",
+	/**
+	 * RATIONALE:
+	 * Every React developer knows what is it, no need to make it more obvious.
+	 */
+	"ref",
+	"Ref",
+];
+
 // https://github.com/sindresorhus/eslint-plugin-unicorn
 const config = defineConfig({
 	extends: ["plugin:unicorn/recommended"],
@@ -15,7 +30,7 @@ const config = defineConfig({
 		 * RATIONALE:
 		 *  Warn about it, is not an bug, just a code readability issue.
 		 */
-		"unicorn/prevent-abbreviations": ["warn"],
+		"unicorn/prevent-abbreviations": ["warn", { ignore: ALLOWED_ABBREVATIONS }],
 	},
 });
 
