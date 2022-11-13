@@ -44,6 +44,7 @@
 		"browserslist": "4.21.4"
 	},
 	"devDependencies": {
+		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "18.11.9",
 		"browserslist": "4.21.4",
