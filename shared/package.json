@@ -8,15 +8,17 @@
 		"node": ">=18"
 	},
 	"exports": {
-		"./configuration": "./dist/configuration.js",
-		"./environment": "./dist/environment.js",
-		"./module": "./dist/module.js"
-	},
-	"typesVersions": {
-		"*": {
-			"*": [
-				"./dist/*"
-			]
+		"./configuration": {
+			"import": "./dist/configuration.js",
+			"types": "./dist/configuration.d.ts"
+		},
+		"./environment": {
+			"import": "./dist/environment.js",
+			"types": "./dist/environment.d.ts"
+		},
+		"./module": {
+			"import": "./dist/module.js",
+			"types": "./dist/module.d.ts"
 		}
 	},
 	"scripts": {
