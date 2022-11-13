@@ -65,6 +65,7 @@ registry].
 
 | Name                                                | Version                                                              |
 | --------------------------------------------------- | -------------------------------------------------------------------- |
+| [![browserslist-config badge]][browserslist-config] | [![browserslist-config version badge]][browserslist-config npm page] |
 | [![eslint-config badge]][eslint-config]             | [![eslint-config version badge]][eslint-config npm page]             |
 | [![markdownlint-config badge]][markdownlint-config] | [![markdownlint-config version badge]][markdownlint-config npm page] |
 | [![prettier-config badge]][prettier-config]         | [![prettier-config version badge]][prettier-config npm page]         |
@@ -72,6 +73,10 @@ registry].
 | [![syncpack-config badge]][syncpack-config]         | [![syncpack-config version badge]][syncpack-config npm page]         |
 | [![typescript-config badge]][typescript-config]     | [![typescript-config version badge]][typescript-config npm page]     |
 
+[browserslist-config]: ./packages/browserslist/README.md
+[browserslist-config badge]: https://img.shields.io/badge/browserslist-config-informational?style=flat-square&logo=browserslist
+[browserslist-config version badge]: https://img.shields.io/npm/v/@adchitects/browserslist-config/latest?style=flat-square&logo=npm
+[browserslist-config npm page]: https://www.npmjs.com/package/@adchitects/browserslist-config
 [eslint-config]: ./packages/eslint/README.md
 [eslint-config badge]: https://img.shields.io/badge/eslint-config-informational?style=flat-square&logo=eslint
 [eslint-config version badge]: https://img.shields.io/npm/v/@adchitects/eslint-config/latest?style=flat-square&logo=npm
