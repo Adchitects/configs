@@ -1,8 +1,8 @@
 import { defineConfig } from "tsup";
 
-import { getNodeESMOptions} from "@adchitects/tsup-config";
+import { getNodeUniveralOptions } from "@adchitects/tsup-config";
 
 export default defineConfig((options) => ({
-	...getNodeESMOptions(options),
+	...getNodeUniveralOptions(options),
 	entry: ["source/*.ts"],
 }));

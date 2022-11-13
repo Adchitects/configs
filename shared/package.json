@@ -7,18 +7,31 @@
 	"engines": {
 		"node": ">=18"
 	},
+	"files": [
+		"dist/"
+	],
 	"exports": {
 		"./configuration": {
 			"import": "./dist/configuration.js",
+			"require": "./dist/configuration.cjs",
 			"types": "./dist/configuration.d.ts"
 		},
 		"./environment": {
 			"import": "./dist/environment.js",
+			"require": "./dist/environment.cjs",
 			"types": "./dist/environment.d.ts"
 		},
 		"./module": {
 			"import": "./dist/module.js",
+			"require": "./dist/module.cjs",
 			"types": "./dist/module.d.ts"
+		}
+	},
+	"typesVersions": {
+		"*": {
+			"*": [
+				"./dist/*"
+			]
 		}
 	},
 	"scripts": {
