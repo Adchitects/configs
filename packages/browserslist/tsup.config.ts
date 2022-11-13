@@ -1,12 +1,9 @@
 import { defineConfig } from "tsup";
 
-export default defineConfig({
-	clean: true,
+import { getNodeCJSOptions } from "@adchitects/tsup-config";
+
+export default defineConfig((options) => ({
+	...getNodeCJSOptions(options),
 	entry: ["source/index.ts"],
-	format: ["cjs"],
-	minify: true,
 	noExternal: ["@workspace/shared"],
-	sourcemap: true,
-	splitting: false,
-	target: ["node16"],
-});
+}));
