@@ -107,7 +107,7 @@ _conditionally_.
 | [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                                   |
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                            |
 | [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
-| [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
+| [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | `@emotion/css` or `@emotion/react` as dependency                             |
 | [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                            |
 | [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                             |
 | [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                                    |
@@ -121,7 +121,7 @@ _conditionally_.
 | [eslint-plugin-regexp]                | ![eslint-plugin-regexp version badge]                | -                                                                            |
 | [eslint-plugin-sonarjs]               | ![eslint-plugin-sonarjs version badge]               | -                                                                            |
 | [eslint-plugin-sql]                   | ![eslint-plugin-sql version badge]                   | -                                                                            |
-| [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `sb` as dependency                                                           |
+| [eslint-plugin-storybook]             | ![eslint-plugin-storybook version badge]             | `sb` or `storybook` or `@storybook/react` as dependency                      |
 | [eslint-plugin-testing-library]       | ![eslint-plugin-testing-library version badge]       | `@testing-library/jest-dom` as dependency                                    |
 | [eslint-plugin-unicorn]               | ![eslint-plugin-unicorn version badge]               | -                                                                            |
 | [eslint-plugin-yml]                   | ![eslint-plugin-yml version badge]                   | -                                                                            |

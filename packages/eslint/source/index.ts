@@ -53,7 +53,7 @@ const mergedConfig = createMergedConfig([
 	pluginRegexp,
 	pluginSonarJS,
 	pluginSQL,
-	hasModule("sb") && pluginStorybook,
+	(hasModule("sb") || hasModule("storybook") || hasModule("@storybook/react")) && pluginStorybook,
 	hasModule("@testing-library/jest-dom") && pluginTestingLibrary,
 	hasModule("typescript") && pluginTypeScript,
 	pluginUnicorn,
