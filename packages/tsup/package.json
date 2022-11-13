@@ -1,0 +1,64 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"type": "module",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"name": "@adchitects/tsup-config",
+	"version": "0.1.0",
+	"description": "@adchitects extendable configuration for tsup.",
+	"keywords": [
+		"config",
+		"tsup",
+		"tools"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/adchitects/configs",
+	"repository": {
+		"directory": "packages/tsup",
+		"type": "git",
+		"url": "https://github.com/adchitects/configs"
+	},
+	"bugs": "https://github.com/adchitects/configs/issues",
+	"engines": {
+		"node": ">=18"
+	},
+	"main": "dist/index.cjs",
+	"files": [
+		"dist/"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"scripts": {
+		"build": "tsup",
+		"clean": "concurrently \"pnpm:clean:*\" --group --timings",
+		"clean:build": "del \"./dist\"",
+		"clean:cache": "del \"./.turbo\" \"./node_modules/.cache\"",
+		"dev": "tsup --watch",
+		"format": "concurrently \"pnpm:format:*\" --group --timings",
+		"format:prettier": "prettier --check \"./**/*\" --ignore-path \"../../.prettierignore\" --write",
+		"format:syncpack": "syncpack format",
+		"lint": "concurrently \"pnpm:lint:*\" --group --timings",
+		"lint:deps": "depcheck",
+		"lint:format": "prettier --check \"./**/*\" --ignore-path \"../../.prettierignore\"",
+		"lint:js": "DEBUG=\"eslint:cli-engine\" eslint . --ext .json,.ts --cache --cache-location \"./node_modules/.cache/tsup\"",
+		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\"",
+		"lint:types": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"tsup": "6.4.0"
+	},
+	"devDependencies": {
+		"@adchitects/typescript-config": "workspace:*",
+		"@types/node": "18.11.9",
+		"tsup": "6.4.0",
+		"typescript": "4.8.4"
+	},
+	"types": "dist/index.d.ts"
+}
