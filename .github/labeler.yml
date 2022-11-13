@@ -25,6 +25,9 @@
 "📦 package:syncpack-config":
     - packages/syncpack/**/*
 
+"📦 package:tsup-config":
+    - packages/tsup/**/*
+
 "📦 package:typescript-config":
     - packages/typescript/**/*
 

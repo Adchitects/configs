@@ -90,7 +90,7 @@ jobs:
         needs: [build]
         with:
             download-build: true
-            step-name: Execute "pretty-quick" CLI task
+            step-name: Execute "Prettier" CLI task
             # https://github.com/azz/pretty-quick#usage
             run: >
                 pnpm prettier .
