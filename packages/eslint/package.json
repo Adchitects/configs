@@ -44,6 +44,7 @@
 		"eslint": "8.27.0"
 	},
 	"dependencies": {
+		"@emotion/eslint-plugin": "^11.10.0",
 		"@rushstack/eslint-patch": "1.2.0",
 		"@typescript-eslint/eslint-plugin": "5.42.1",
 		"@typescript-eslint/parser": "5.42.1",
