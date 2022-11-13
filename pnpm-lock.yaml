@@ -142,14 +142,14 @@ importers:
   packages/prettier:
     specifiers:
       '@adchitects/typescript-config': workspace:*
-      '@prettier/plugin-php': 0.19.1
+      '@prettier/plugin-php': 0.19.2
       '@types/node': 18.11.9
       '@types/prettier': 2.7.1
       '@workspace/shared': workspace:*
       tsup: 6.4.0
       typescript: 4.8.4
     dependencies:
-      '@prettier/plugin-php': 0.19.1
+      '@prettier/plugin-php': 0.19.2
     devDependencies:
       '@adchitects/typescript-config': link:../typescript
       '@types/node': 18.11.9
@@ -744,14 +744,14 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /@prettier/plugin-php/0.19.1:
-    resolution: {integrity: sha512-faoQX6QF4JZ0xJT+FRkMU7JnUTqVFRSwz7oKYuKgjY6u8VHSURlRXVkP4UyXxsTPAGjVJpNh7JseKkpK1DZziw==}
+  /@prettier/plugin-php/0.19.2:
+    resolution: {integrity: sha512-j4Io//Js9ajKP7vgjKpS0rS8B/HKIJxutUshlbCpXvsP8Cz28MYp2VFJytpS9zyLEfsMPXordNWjkBVvHRL7ow==}
     peerDependencies:
       prettier: ^1.15.0 || ^2.0.0
     dependencies:
       linguist-languages: 7.21.0
       mem: 8.1.1
-      php-parser: 3.1.1
+      php-parser: 3.1.2
     dev: false
 
   /@rushstack/eslint-patch/1.2.0:
@@ -4883,8 +4883,8 @@ packages:
       yargs: 17.6.0
     dev: false
 
-  /php-parser/3.1.1:
-    resolution: {integrity: sha512-HUxWIWpJoGhnSVzM6nPI1O2RePd7eJKzJoL3VZr6/KUUdcHKBex2Cp7p6pWOV1WxgKI/oYgRPMywwLCP789OYA==}
+  /php-parser/3.1.2:
+    resolution: {integrity: sha512-RRCMK/bCKYPLRhlpfMlVVVsaIesuW+X6UxRqWjm7dTAmTZk8PvD6hCmG/RVeDzse7iqYWJwLJeqEbaGLC+aHeQ==}
     dev: false
 
   /picocolors/1.0.0:
