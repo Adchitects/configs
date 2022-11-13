@@ -18,7 +18,7 @@
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/prettier",
 	"bugs": "https://github.com/adchitects/configs/issues",
 	"engines": {
-		"node": ">=16"
+		"node": ">=18"
 	},
 	"main": "dist/index.js",
 	"files": [
@@ -47,6 +47,7 @@
 		"@prettier/plugin-php": "0.19.2"
 	},
 	"devDependencies": {
+		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "18.11.9",
 		"@types/prettier": "2.7.1",

@@ -18,7 +18,7 @@
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/eslint",
 	"bugs": "https://github.com/adchitects/configs/issues",
 	"engines": {
-		"node": ">=16"
+		"node": ">=18"
 	},
 	"main": "dist/index.js",
 	"files": [
@@ -71,6 +71,7 @@
 		"eslint-plugin-yml": "1.2.0"
 	},
 	"devDependencies": {
+		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/eslint": "8.4.6",
 		"@types/node": "18.11.9",

@@ -18,7 +18,7 @@
 	"repository": "https://github.com/adchitects/configs/tree/main/packages/stylelint",
 	"bugs": "https://github.com/adchitects/configs/issues",
 	"engines": {
-		"node": ">=16"
+		"node": ">=18"
 	},
 	"main": "dist/index.js",
 	"files": [
@@ -53,6 +53,7 @@
 		"stylelint-scss": "4.3.0"
 	},
 	"devDependencies": {
+		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "18.11.9",
 		"@workspace/shared": "workspace:*",

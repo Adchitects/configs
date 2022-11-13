@@ -1,13 +1,8 @@
 import { defineConfig } from "tsup";
 
-export default defineConfig({
-	clean: true,
-	dts: true,
+import { getNodeUniveralOptions } from "@adchitects/tsup-config";
+
+export default defineConfig((options) => ({
+	...getNodeUniveralOptions(options),
 	entry: ["source/*.ts"],
-	format: ["esm"],
-	minify: true,
-	outDir: "dist/",
-	sourcemap: true,
-	splitting: true,
-	target: ["node16"],
-});
+}));
