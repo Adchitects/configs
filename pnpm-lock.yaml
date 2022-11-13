@@ -231,6 +231,7 @@ importers:
 
   shared:
     specifiers:
+      '@adchitects/tsup-config': workspace:*
       '@adchitects/typescript-config': workspace:*
       '@types/node': 18.11.9
       deepmerge-ts: 4.2.2
@@ -241,6 +242,7 @@ importers:
       deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
     devDependencies:
+      '@adchitects/tsup-config': link:../packages/tsup
       '@adchitects/typescript-config': link:../packages/typescript
       '@types/node': 18.11.9
       tsup: 6.4.0_typescript@4.8.4
