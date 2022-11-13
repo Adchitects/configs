@@ -9,6 +9,7 @@ import eslint from "./eslint.js";
 
 import pluginCompat from "./plugins/compat.js";
 import pluginDiff from "./plugins/diff.js";
+import pluginEmotion from "./plugins/emotion.js";
 import pluginImport from "./plugins/import.js";
 import pluginJest from "./plugins/jest.js";
 import pluginJestDOM from "./plugins/jest-dom.js";
@@ -38,6 +39,7 @@ const mergedConfig = createMergedConfig([
 	// Plugins
 	pluginCompat,
 	isContinuousIntegration() && pluginDiff,
+	(hasModule("@emotion/css") || hasModule("@emotion/react")) && pluginEmotion,
 	pluginImport,
 	(hasModule("jest") || hasModule("vitest")) && pluginJest,
 	hasModule("@testing-library/jest-dom") && pluginJestDOM,
