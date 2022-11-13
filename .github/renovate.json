@@ -14,7 +14,6 @@
 				"husky",
 				"lint-staged",
 				"node-jq",
-				"tsup",
 				"turbo"
 			]
 		},
@@ -59,6 +58,12 @@
 			"addLabels": ["📦 package:syncpack-config"],
 			"matchUpdateTypes": ["major", "minor", "patch", "rollback"],
 			"packagePatterns": ["syncpack"]
+		},
+		{
+			"groupName": "tsup dependencies",
+			"addLabels": ["📦 package:tsup-config"],
+			"matchPackageNames": ["tsup"],
+			"matchUpdateTypes": ["major", "minor", "patch", "rollback"]
 		},
 		{
 			"groupName": "TypeScript dependencies",
