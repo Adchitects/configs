@@ -107,6 +107,7 @@ _conditionally_.
 | [@typescript-eslint/eslint-plugin]    | ![@typescript-eslint/eslint-plugin version badge]    | `typescript` as dependency                                                   |
 | [eslint-plugin-compat]                | ![eslint-plugin-compat version badge]                | -                                                                            |
 | [eslint-plugin-diff]                  | ![eslint-plugin-diff version badge]                  | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
+| [@emotion/eslint-plugin]              | ![@emotion/eslint-plugin version badge]              | Set one of environment variables: `CI` or `CONTINUOUS_INTEGRATION` to `true` |
 | [eslint-plugin-import]                | ![eslint-plugin-import version badge]                | -                                                                            |
 | [eslint-plugin-jest]                  | ![eslint-plugin-jest version badge]                  | `jest` or `vitest` as dependency                                             |
 | [eslint-plugin-jest-dom]              | ![eslint-plugin-jest-dom version badge]              | `@testing-library/jest-dom` as dependency                                    |
@@ -131,6 +132,8 @@ _conditionally_.
 [eslint-plugin-compat version badge]: https://img.shields.io/npm/v/eslint-plugin-compat?logo=npm&style=flat-square
 [eslint-plugin-diff]: https://github.com/paleite/eslint-plugin-diff
 [eslint-plugin-diff version badge]: https://img.shields.io/npm/v/eslint-plugin-diff?logo=npm&style=flat-square
+[@emotion/eslint-plugin]: https://github.com/paleite/@emotion/eslint-plugin
+[@emotion/eslint-plugin version badge]: https://img.shields.io/npm/v/@emotion/eslint-plugin?logo=npm&style=flat-square
 [eslint-plugin-import]: https://github.com/import-js/eslint-plugin-import
 [eslint-plugin-import version badge]: https://img.shields.io/npm/v/eslint-plugin-import?logo=npm&style=flat-square
 [eslint-plugin-jest]: https://github.com/jest-community/eslint-plugin-jest
