@@ -55,8 +55,8 @@
 		"read-pkg-up": "9.1.0"
 	},
 	"devDependencies": {
-		"@adchitects/typescript-config": "workspace:*",
 		"@adchitects/tsup-config": "workspace:*",
+		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "18.11.9",
 		"tsup": "6.4.0",
 		"typescript": "4.8.4"
