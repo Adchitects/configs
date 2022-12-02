@@ -8,7 +8,7 @@ export function getBaseOptions(options: Options): Options {
 
 	return {
 		clean: true,
-		dts: !watch,
+		dts: true,
 		minify: !watch,
 		outDir: "./dist",
 		sourcemap: !watch,

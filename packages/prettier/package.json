@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package",
-	"type": "commonjs",
+	"type": "module",
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org/",
 		"access": "public"
@@ -20,7 +20,7 @@
 	"engines": {
 		"node": ">=18"
 	},
-	"main": "dist/index.js",
+	"main": "dist/index.cjs",
 	"files": [
 		"/dist"
 	],
