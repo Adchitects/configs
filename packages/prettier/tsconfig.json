@@ -3,12 +3,11 @@
 	"extends": "@adchitects/typescript-config",
 	"compilerOptions": {
 		"composite": true,
-		"module": "CommonJS",
-		"outDir": "./dist",
-		"rootDir": "./source",
+		"module": "NodeNext",
+		"rootDir": "./",
 		"tsBuildInfoFile": "./node_modules/.cache/tsbuildinfo",
 		"types": ["node", "prettier"]
 	},
 	"exclude": ["dist/", "node_modules/"],
-	"include": ["source/"]
+	"include": ["source/**/*"]
 }
