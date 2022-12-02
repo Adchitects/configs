@@ -6,7 +6,7 @@ const config = defineConfig({
 	rules: {
 		"@emotion/import-from-emotion": "error",
 		"@emotion/jsx-import": "off",
-		"@emotion/no-vanilla": "error",
+		"@emotion/no-vanilla": "off",
 		"@emotion/pkg-renaming": "error",
 		"@emotion/styled-import": "error",
 	},
