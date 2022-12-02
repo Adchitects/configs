@@ -5,6 +5,18 @@ const ALLOWED_ABBREVATIONS = [
 	 * RATIONALE:
 	 * This is descriptive & obvious enough.
 	 */
+	"args",
+	"Args",
+	/**
+	 * RATIONALE:
+	 * This is descriptive & obvious enough.
+	 */
+	"params",
+	"Params",
+	/**
+	 * RATIONALE:
+	 * This is descriptive & obvious enough.
+	 */
 	"props",
 	"Props",
 	/**
