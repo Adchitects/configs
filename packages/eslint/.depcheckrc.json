@@ -1,6 +1,7 @@
 {
 	"ignores": [
 		"@adchitects/typescript-config",
+		"@emotion/eslint-plugin",
 		"@typescript-eslint/*",
 		"@types/eslint",
 		"@types/node",
