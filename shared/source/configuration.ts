@@ -1,6 +1,6 @@
 import { deepmerge } from "deepmerge-ts";
 
-import { hasModule } from "./module";
+import { hasModule } from "./module.js";
 
 type Config = Record<string, unknown>;
 
