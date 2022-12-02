@@ -64,6 +64,7 @@ importers:
     specifiers:
       '@adchitects/tsup-config': workspace:*
       '@adchitects/typescript-config': workspace:*
+      '@emotion/eslint-plugin': ^11.10.0
       '@rushstack/eslint-patch': 1.2.0
       '@types/eslint': 8.4.10
       '@types/node': 18.11.9
@@ -95,6 +96,7 @@ importers:
       tsup: 6.5.0
       typescript: 4.9.3
     dependencies:
+      '@emotion/eslint-plugin': 11.10.0
       '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/eslint-plugin': 5.45.0_fa34fco6ifjoy23bohvwoqn6xu
       '@typescript-eslint/parser': 5.45.0_typescript@4.9.3
@@ -601,6 +603,13 @@ packages:
     dependencies:
       postcss: 8.4.19
       postcss-selector-parser: 6.0.10
+
+  /@emotion/eslint-plugin/11.10.0:
+    resolution: {integrity: sha512-nWpuoQQrzI9aM9fgn+Pbb0pOau4BhheXyVqHcOYKFq46uSuSR2ivZaDwwCJKI6ScA8Pm7OcoOpwdRH2iisf9cg==}
+    engines: {node: '>=6'}
+    peerDependencies:
+      eslint: 6 || 7 || 8
+    dev: false
 
   /@esbuild/android-arm/0.15.11:
     resolution: {integrity: sha512-PzMcQLazLBkwDEkrNPi9AbjFt6+3I7HKbiYF2XtWQ7wItrHvEOeO3T8Am434zAozWtVP7lrTue1bEfc2nYWeCA==}

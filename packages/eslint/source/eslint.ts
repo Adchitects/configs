@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { getIgnorePatterns } from "@workspace/shared/configuration";
+import { hasModule } from "@workspace/shared/module";
 
 const config = defineConfig({
 	parserOptions: {
@@ -14,24 +14,13 @@ const config = defineConfig({
 		// Ignore...
 		"**/node_modules",
 		"**/.git",
+		"**/.husky",
+		"**/.turbo",
+		"**/.vercel",
 		"**/build",
 		"**/dist",
 		"**/package-lock.json",
 		"**/pnpm-lock.yaml",
-		...getIgnorePatterns([
-			{
-				module: "husky",
-				patterns: "**/.husky",
-			},
-			{
-				module: "turbo",
-				patterns: "**/.turbo",
-			},
-			{
-				module: "vercel",
-				patterns: "**/.vercel",
-			},
-		]),
 	],
 
 	extends: ["eslint:recommended"],
@@ -74,7 +63,7 @@ const config = defineConfig({
 		"no-shadow": "error", // http://eslint.org/docs/rules/no-shadow
 		"no-shadow-restricted-names": "error", // http://eslint.org/docs/rules/no-shadow-restricted-names
 		"no-unused-vars": [
-			"error",
+			hasModule("typescript") ? "off" : "error",
 			{
 				// http://eslint.org/docs/rules/no-unused-vars
 				vars: "local",
@@ -141,7 +130,7 @@ const config = defineConfig({
 		"no-self-compare": "error", // http://eslint.org/docs/rules/no-self-compare
 		"no-sequences": "error", // http://eslint.org/docs/rules/no-sequences
 		"no-throw-literal": "error", // http://eslint.org/docs/rules/no-throw-literal
-		"no-undef": "error", // http://eslint.org/docs/rules/no-undef
+		"no-undef": [hasModule("typescript") ? "off" : "error"], // http://eslint.org/docs/rules/no-undef
 		"no-with": "error", // http://eslint.org/docs/rules/no-with
 		"radix": "error", // http://eslint.org/docs/rules/radix
 		"vars-on-top": "error", // http://eslint.org/docs/rules/vars-on-top
@@ -204,7 +193,8 @@ const config = defineConfig({
 			},
 		],
 		"space-before-blocks": "error", // http://eslint.org/docs/rules/space-before-blocks
-		"space-before-function-paren": ["error", "never"], // http://eslint.org/docs/rules/space-before-function-paren
+		// TODO: Discuss it. It blocks `async () => {}`
+		// "space-before-function-paren": ["error", "never"], // http://eslint.org/docs/rules/space-before-function-paren
 		"space-infix-ops": "error", // http://eslint.org/docs/rules/space-infix-ops
 		"spaced-comment": [
 			"off",
