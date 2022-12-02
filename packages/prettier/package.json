@@ -6,7 +6,7 @@
 		"access": "public"
 	},
 	"name": "@adchitects/prettier-config",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "@adchitects extendable configuration for prettier.",
 	"keywords": [
 		"config",
