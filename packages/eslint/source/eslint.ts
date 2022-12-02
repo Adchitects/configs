@@ -1,6 +1,6 @@
 import { defineConfig } from "eslint-define-config";
 
-import { getIgnorePatterns } from "@workspace/shared/configuration";
+import { hasModule } from "@workspace/shared/module";
 
 const config = defineConfig({
 	parserOptions: {
@@ -14,24 +14,13 @@ const config = defineConfig({
 		// Ignore...
 		"**/node_modules",
 		"**/.git",
+		"**/.husky",
+		"**/.turbo",
+		"**/.vercel",
 		"**/build",
 		"**/dist",
 		"**/package-lock.json",
 		"**/pnpm-lock.yaml",
-		...getIgnorePatterns([
-			{
-				module: "husky",
-				patterns: "**/.husky",
-			},
-			{
-				module: "turbo",
-				patterns: "**/.turbo",
-			},
-			{
-				module: "vercel",
-				patterns: "**/.vercel",
-			},
-		]),
 	],
 
 	extends: ["eslint:recommended"],
