@@ -38,12 +38,12 @@
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
 	},
 	"peerDependencies": {
-		"typescript": "4.8.4"
+		"typescript": "4.9.3"
 	},
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
 		"node-jq": "2.3.4",
 		"strip-json-comments-cli": "2.0.2",
-		"typescript": "4.8.4"
+		"typescript": "4.9.3"
 	}
 }
