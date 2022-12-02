@@ -50,14 +50,14 @@ importers:
       '@adchitects/typescript-config': workspace:*
       '@types/node': 18.11.9
       browserslist: 4.21.4
-      tsup: 6.4.0
+      tsup: 6.5.0
       typescript: 4.9.3
     devDependencies:
       '@adchitects/tsup-config': link:../tsup
       '@adchitects/typescript-config': link:../typescript
       '@types/node': 18.11.9
       browserslist: 4.21.4
-      tsup: 6.4.0_typescript@4.9.3
+      tsup: 6.5.0_typescript@4.9.3
       typescript: 4.9.3
 
   packages/eslint:
@@ -92,7 +92,7 @@ importers:
       eslint-plugin-testing-library: 5.9.1
       eslint-plugin-unicorn: 45.0.1
       eslint-plugin-yml: 1.2.0
-      tsup: 6.4.0
+      tsup: 6.5.0
       typescript: 4.9.3
     dependencies:
       '@rushstack/eslint-patch': 1.2.0
@@ -126,7 +126,7 @@ importers:
       '@types/eslint': 8.4.10
       '@types/node': 18.11.9
       '@workspace/shared': link:../../shared
-      tsup: 6.4.0_typescript@4.9.3
+      tsup: 6.5.0_typescript@4.9.3
       typescript: 4.9.3
 
   packages/markdownlint:
@@ -149,7 +149,7 @@ importers:
       '@types/node': 18.11.9
       '@types/prettier': 2.7.1
       '@workspace/shared': workspace:*
-      tsup: 6.4.0
+      tsup: 6.5.0
       typescript: 4.9.3
     dependencies:
       '@prettier/plugin-php': 0.19.2
@@ -159,7 +159,7 @@ importers:
       '@types/node': 18.11.9
       '@types/prettier': 2.7.1
       '@workspace/shared': link:../../shared
-      tsup: 6.4.0_typescript@4.9.3
+      tsup: 6.5.0_typescript@4.9.3
       typescript: 4.9.3
 
   packages/stylelint:
@@ -176,7 +176,7 @@ importers:
       stylelint-no-unsupported-browser-features: 6.0.1
       stylelint-order: 5.0.0
       stylelint-scss: 4.3.0
-      tsup: 6.4.0
+      tsup: 6.5.0
       typescript: 4.9.3
     dependencies:
       stylelint-config-prettier: 9.0.4_stylelint@14.15.0
@@ -192,7 +192,7 @@ importers:
       '@types/node': 18.11.9
       '@workspace/shared': link:../../shared
       stylelint: 14.15.0
-      tsup: 6.4.0_typescript@4.9.3
+      tsup: 6.5.0_typescript@4.9.3
       typescript: 4.9.3
 
   packages/syncpack:
@@ -202,7 +202,7 @@ importers:
       '@types/node': 18.11.9
       '@workspace/shared': workspace:*
       syncpack: 8.3.9
-      tsup: 6.4.0
+      tsup: 6.5.0
       typescript: 4.9.3
     devDependencies:
       '@adchitects/tsup-config': link:../tsup
@@ -210,19 +210,19 @@ importers:
       '@types/node': 18.11.9
       '@workspace/shared': link:../../shared
       syncpack: 8.3.9
-      tsup: 6.4.0_typescript@4.9.3
+      tsup: 6.5.0_typescript@4.9.3
       typescript: 4.9.3
 
   packages/tsup:
     specifiers:
       '@adchitects/typescript-config': workspace:*
       '@types/node': 18.11.9
-      tsup: 6.4.0
+      tsup: 6.5.0
       typescript: 4.9.3
     devDependencies:
       '@adchitects/typescript-config': link:../typescript
       '@types/node': 18.11.9
-      tsup: 6.4.0_typescript@4.9.3
+      tsup: 6.5.0_typescript@4.9.3
       typescript: 4.9.3
 
   packages/typescript:
@@ -244,7 +244,7 @@ importers:
       '@types/node': 18.11.9
       deepmerge-ts: 4.2.2
       read-pkg-up: 9.1.0
-      tsup: 6.4.0
+      tsup: 6.5.0
       typescript: 4.9.3
     dependencies:
       deepmerge-ts: 4.2.2
@@ -253,7 +253,7 @@ importers:
       '@adchitects/tsup-config': link:../packages/tsup
       '@adchitects/typescript-config': link:../packages/typescript
       '@types/node': 18.11.9
-      tsup: 6.4.0_typescript@4.9.3
+      tsup: 6.5.0_typescript@4.9.3
       typescript: 4.9.3
 
 packages:
@@ -6583,8 +6583,8 @@ packages:
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
 
-  /tsup/6.4.0_typescript@4.9.3:
-    resolution: {integrity: sha512-4OlbqIK/SF+cJp0mMqPM2pKULvgj/1S2Gm3I1aFoFGIryUOyIqPZBoqKkqVQT6uFtWJ5AHftIv0riXKfHox1zQ==}
+  /tsup/6.5.0_typescript@4.9.3:
+    resolution: {integrity: sha512-36u82r7rYqRHFkD15R20Cd4ercPkbYmuvRkz3Q1LCm5BsiFNUgpo36zbjVhCOgvjyxNBWNKHsaD5Rl8SykfzNA==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:

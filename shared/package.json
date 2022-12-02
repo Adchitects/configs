@@ -58,7 +58,7 @@
 		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "18.11.9",
-		"tsup": "6.4.0",
+		"tsup": "6.5.0",
 		"typescript": "4.9.3"
 	}
 }
