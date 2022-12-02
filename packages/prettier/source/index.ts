@@ -15,4 +15,4 @@ const mergedConfig = createMergedConfig([
 
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = mergedConfig;
-// export default mergedConfig;
+export default mergedConfig;
