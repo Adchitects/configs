@@ -193,7 +193,8 @@ const config = defineConfig({
 			},
 		],
 		"space-before-blocks": "error", // http://eslint.org/docs/rules/space-before-blocks
-		"space-before-function-paren": ["error", "never"], // http://eslint.org/docs/rules/space-before-function-paren
+		// TODO: Discuss it. It blocks `async () => {}`
+		// "space-before-function-paren": ["error", "never"], // http://eslint.org/docs/rules/space-before-function-paren
 		"space-infix-ops": "error", // http://eslint.org/docs/rules/space-infix-ops
 		"spaced-comment": [
 			"off",
