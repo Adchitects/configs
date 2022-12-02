@@ -13,7 +13,8 @@
 		"strict": true,
 
 		/* Modules */
-		"moduleResolution": "node",
+		"module": "ESNext",
+		"moduleResolution": "NodeNext",
 		"resolveJsonModule": true,
 
 		/* Emit */
