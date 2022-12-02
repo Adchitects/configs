@@ -50,6 +50,6 @@
 		"@workspace/shared": "workspace:*",
 		"syncpack": "8.3.9",
 		"tsup": "6.5.0",
-		"typescript": "4.8.4"
+		"typescript": "4.9.3"
 	}
 }
