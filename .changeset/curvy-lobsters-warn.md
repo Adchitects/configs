@@ -2,4 +2,4 @@
 "@adchitects/eslint-config": patch
 ---
 
-🐛  Resolve conflicts between rules used by `eslint` and `@typescript-eslint`
+🐛 Resolve conflicts between rules used by `eslint` and `@typescript-eslint`
