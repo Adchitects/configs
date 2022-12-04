@@ -20,7 +20,7 @@ importers:
       husky: 8.0.2
       lint-staged: 13.0.4
       markdownlint-cli: 0.32.2
-      syncpack: 8.3.9
+      syncpack: 8.4.11
       turbo: 1.6.3
       typescript: 4.9.3
     devDependencies:
@@ -40,7 +40,7 @@ importers:
       husky: 8.0.2
       lint-staged: 13.0.4
       markdownlint-cli: 0.32.2
-      syncpack: 8.3.9
+      syncpack: 8.4.11
       turbo: 1.6.3
       typescript: 4.9.3
 
@@ -203,7 +203,7 @@ importers:
       '@adchitects/typescript-config': workspace:*
       '@types/node': 18.11.9
       '@workspace/shared': workspace:*
-      syncpack: 8.3.9
+      syncpack: 8.4.11
       tsup: 6.5.0
       typescript: 4.9.3
     devDependencies:
@@ -211,7 +211,7 @@ importers:
       '@adchitects/typescript-config': link:../typescript
       '@types/node': 18.11.9
       '@workspace/shared': link:../../shared
-      syncpack: 8.3.9
+      syncpack: 8.4.11
       tsup: 6.5.0_typescript@4.9.3
       typescript: 4.9.3
 
@@ -6386,8 +6386,8 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /syncpack/8.3.9:
-    resolution: {integrity: sha512-oDaEvgZAoU40WXX4okQ7DiCfVEcO2antl+jV+Av+FbS4Hyh8VoJ8F6HGo2G8eT9H+AyBBM1iDUdbtR1MQRimoQ==}
+  /syncpack/8.4.11:
+    resolution: {integrity: sha512-qYhkDvPr0goemEqykGaUKF4TD9sRlPQXNy0wn60SXsatAVaZPrNn/nFtfYBLGBp4gNlrpVzixnzBOTihQZxhmg==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
