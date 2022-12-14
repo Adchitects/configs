@@ -1,5 +1,11 @@
 # @adchitects/prettier-config<!-- markdownlint-disable line-length list-marker-space no-duplicate-header ul-style ul-indent no-bare-urls -->
 
+## 0.3.0
+
+### Minor Changes
+
+-   [#63](https://github.com/Adchitects/configs/pull/63) [`9939eec`](https://github.com/Adchitects/configs/commit/9939eece8a654367920d989ff03606720627ba15) Thanks [@acwo](https://github.com/acwo)! - added: "openingBraceNewLine" property
+
 ## 0.2.0
 
 ### Minor Changes
