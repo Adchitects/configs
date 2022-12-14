@@ -6,6 +6,7 @@ const config = {
 	singleQuote: false,
 	trailingCommaPHP: true,
 	braceStyle: "1tbs",
+	openingBraceNewLine: false,
 };
 
 export default config;
