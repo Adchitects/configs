@@ -176,7 +176,7 @@ importers:
       stylelint-config-standard-scss: 6.1.0
       stylelint-high-performance-animation: 1.6.0
       stylelint-no-unsupported-browser-features: 6.0.1
-      stylelint-order: 5.0.0
+      stylelint-order: 6.0.1
       stylelint-scss: 4.3.0
       tsup: 6.5.0
       typescript: 4.9.3
@@ -186,7 +186,7 @@ importers:
       stylelint-config-standard-scss: 6.1.0_stylelint@14.15.0
       stylelint-high-performance-animation: 1.6.0_stylelint@14.15.0
       stylelint-no-unsupported-browser-features: 6.0.1_stylelint@14.15.0
-      stylelint-order: 5.0.0_stylelint@14.15.0
+      stylelint-order: 6.0.1_stylelint@14.15.0
       stylelint-scss: 4.3.0_stylelint@14.15.0
     devDependencies:
       '@adchitects/tsup-config': link:../tsup
@@ -1194,7 +1194,7 @@ packages:
       '@vue/shared': 3.2.41
       estree-walker: 2.0.2
       magic-string: 0.25.9
-      postcss: 8.4.19
+      postcss: 8.4.21
       source-map: 0.6.1
     dev: true
 
@@ -2225,7 +2225,7 @@ packages:
       duplexer2: 0.0.2
       ldjson-stream: 1.2.1
       multimatch: 5.0.0
-      postcss: 8.4.18
+      postcss: 8.4.21
       source-map: 0.7.4
       through2: 4.0.2
       yargs: 16.2.0
@@ -5335,12 +5335,12 @@ packages:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  /postcss-sorting/7.0.1_postcss@8.4.18:
-    resolution: {integrity: sha512-iLBFYz6VRYyLJEJsBJ8M3TCqNcckVzz4wFounSc5Oez35ogE/X+aoC5fFu103Ot7NyvjU3/xqIXn93Gp3kJk4g==}
+  /postcss-sorting/8.0.1_postcss@8.4.21:
+    resolution: {integrity: sha512-go9Zoxx7KQH+uLrJ9xa5wRErFeXu01ydA6O8m7koPXkmAN7Ts//eRcIqjo0stBR4+Nir2gMYDOWAOx7O5EPUZA==}
     peerDependencies:
-      postcss: ^8.3.9
+      postcss: ^8.4.20
     dependencies:
-      postcss: 8.4.18
+      postcss: 8.4.21
     dev: false
 
   /postcss-value-parser/4.2.0:
@@ -5357,6 +5357,14 @@ packages:
 
   /postcss/8.4.19:
     resolution: {integrity: sha512-h+pbPsyhlYj6N2ozBmHhHrs9DzGmbaarbLvWipMRO7RLS+v4onj26MPFXA5OBYFxyqYhUJK456SwDcY9H2/zsA==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+
+  /postcss/8.4.21:
+    resolution: {integrity: sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.4
@@ -6263,13 +6271,13 @@ packages:
       stylelint: 14.15.0
     dev: false
 
-  /stylelint-order/5.0.0_stylelint@14.15.0:
-    resolution: {integrity: sha512-OWQ7pmicXufDw5BlRqzdz3fkGKJPgLyDwD1rFY3AIEfIH/LQY38Vu/85v8/up0I+VPiuGRwbc2Hg3zLAsJaiyw==}
+  /stylelint-order/6.0.1_stylelint@14.15.0:
+    resolution: {integrity: sha512-C9gJDZArRBZvn+4MPgggwYTp7dK49WPnYa5+6tBEkZnW/YWj4xBVNJdQjIik14w5orlF9RqFpYDHN0FPWIFOSQ==}
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
-      postcss: 8.4.18
-      postcss-sorting: 7.0.1_postcss@8.4.18
+      postcss: 8.4.21
+      postcss-sorting: 8.0.1_postcss@8.4.21
       stylelint: 14.15.0
     dev: false
 
