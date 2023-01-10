@@ -149,7 +149,7 @@ importers:
       '@adchitects/typescript-config': workspace:*
       '@prettier/plugin-php': 0.19.2
       '@types/node': 18.11.9
-      '@types/prettier': 2.7.1
+      '@types/prettier': 2.7.2
       '@workspace/shared': workspace:*
       tsup: 6.5.0
       typescript: 4.9.3
@@ -159,7 +159,7 @@ importers:
       '@adchitects/tsup-config': link:../tsup
       '@adchitects/typescript-config': link:../typescript
       '@types/node': 18.11.9
-      '@types/prettier': 2.7.1
+      '@types/prettier': 2.7.2
       '@workspace/shared': link:../../shared
       tsup: 6.5.0_typescript@4.9.3
       typescript: 4.9.3
@@ -886,8 +886,8 @@ packages:
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
 
-  /@types/prettier/2.7.1:
-    resolution: {integrity: sha512-ri0UmynRRvZiiUJdiz38MmIblKK+oH30MztdBVR95dv/Ubw6neWSb8u1XpRb72L4qsZOhz+L+z9JD40SJmfWow==}
+  /@types/prettier/2.7.2:
+    resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
     dev: true
 
   /@types/responselike/1.0.0:
