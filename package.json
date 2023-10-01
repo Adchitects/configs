@@ -43,7 +43,7 @@
 		"@changesets/changelog-github": "0.4.7",
 		"@changesets/cli": "2.25.2",
 		"all-contributors-cli": "6.24.0",
-		"browserslist": "4.21.4",
+		"browserslist": "4.22.1",
 		"concurrently": "7.6.0",
 		"del-cli": "5.0.0",
 		"depcheck": "1.4.3",
