@@ -41,16 +41,16 @@
 		"lint:types": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"prettier": "2.8.0"
+		"prettier": "2.8.8"
 	},
 	"dependencies": {
-		"@prettier/plugin-php": "0.19.2"
+		"@prettier/plugin-php": "0.21.0"
 	},
 	"devDependencies": {
 		"@adchitects/tsup-config": "workspace:*",
 		"@adchitects/typescript-config": "workspace:*",
 		"@types/node": "18.11.9",
-		"@types/prettier": "2.7.1",
+		"@types/prettier": "2.7.3",
 		"@workspace/shared": "workspace:*",
 		"tsup": "6.5.0",
 		"typescript": "4.9.3"
