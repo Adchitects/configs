@@ -39,11 +39,11 @@
 		"lint:md": "markdownlint . --dot --ignore-path \"../../.gitignore\" --config \"../../.markdownlint.json\""
 	},
 	"peerDependencies": {
-		"markdownlint-cli": "0.32.2"
+		"markdownlint-cli": "0.37.0"
 	},
 	"devDependencies": {
 		"make-dir-cli": "3.0.0",
-		"markdownlint": "0.26.2",
+		"markdownlint": "0.32.1",
 		"node-jq": "2.3.4",
 		"strip-json-comments-cli": "2.0.2"
 	}
