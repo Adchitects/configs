@@ -10,7 +10,7 @@
 		"node": ">=16",
 		"pnpm": ">=7"
 	},
-	"packageManager": "pnpm@7.17.1",
+	"packageManager": "pnpm@7.33.6",
 	"scripts": {
 		"build": "turbo run build -v",
 		"clean": "pnpm clean:cache ; turbo run clean -v",
